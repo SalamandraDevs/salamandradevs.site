@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ "<!-- Layout para contenido del blog -->" | safeHTML }}
+<main>
+  <h2>{{ .Title }}</h2>
+  <hr>
+  <div class="content">
+    {{ .Content }}
+  </div>
+</main>
+{{ end }}

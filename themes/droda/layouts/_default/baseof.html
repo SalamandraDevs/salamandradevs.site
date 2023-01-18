@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="icon" href="{{ "images/favicon.png" | absURL }}" sizes="any" type="image/png" />
+    <meta name="base-url" content="{{ .Site.BaseURL | absURL }}">
+    <meta name="kind" content="{{ .Page.Kind }}">
+    {{ "<!-- Main styles -->" | safeHTML }}
+    {{ $homeStyles := resources.Get "css/main.css"}}
+    <link rel="stylesheet" href="{{ $homeStyles.Permalink }}">
+  </head>
+  <body>
+      {{ partial "aside.html" . }}
+      {{ partial "navbar.html" . }}
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer.html" . }}
+  </body>
+  {{ "<!-- Main Script -->" | safeHTML }}
+  {{ $mainScript := resources.Get "js/main.js" }}
+  <script src="{{ $mainScript.Permalink }}"></script>
+  {{ "<!-- JS Thirparties -->" | safeHTML }}
+  {{ range .Site.Params.plugins.js }}
+  <script src="{{ .link | absURL }}" crossorigin="anonymous"></script>
+  {{ end }}
+</html>

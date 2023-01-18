@@ -1,0 +1,23 @@
+logo = "images/site_logo.svg"
+
+# JavaScript de terceros
+[[plugins.js]]
+link = "https://kit.fontawesome.com/dfd09db611.js"
+
+# Links sociales
+[[social]]
+link = "https://wa.link/q6fg6w"
+fontAwesomeClass = "fab fa-whatsapp"
+hr = true
+[[social]]
+link = "https://instagram.com/salamandradevs"
+fontAwesomeClass = "fab fa-instagram"
+hr = false
+[[social]]
+link = "https://www.linkedin.com/company/nombre/"
+fontAwesomeClass = "fab fa-linkedin"
+hr = false
+[[social]]
+link = "https://twitter.com/salamandradevs"
+fontAwesomeClass = "fab fa-twitter"
+hr = false

@@ -1,0 +1,28 @@
+baseURL = "https://salamandradevs.site/"
+languageCode = "es-co"
+title = "Salamandra Devs"
+theme = "droda"
+publishDir = "public_html"
+
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+buildFuture = true # Por defecto hugo no construye contenido con fecha futura.
+
+[menu]
+[[menu.main]]
+  identifier = 'chat'
+  name = 'Telegram'
+  pre = "<i class='fa-brands fa-telegram'></i>"
+  url ='https://t.me/salamandradevs'
+  weight = -110
+[[menu.main]]
+  identifier = 'meets'
+  name = 'Reuniones'
+  pre = "<i class='fa-regular fa-comments'></i>"
+  url ='https://agora.salamandradevs.site'
+  weight = -100
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

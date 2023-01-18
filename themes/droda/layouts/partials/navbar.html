@@ -1,0 +1,9 @@
+{{ "<!-- Partial block for navbar -->" | safeHTML }}
+<nav>
+  {{ with .Site.GetPage "home" }}
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+  {{ range .Site.Sections }}
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+</nav>

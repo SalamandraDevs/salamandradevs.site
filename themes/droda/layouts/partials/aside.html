@@ -1,0 +1,8 @@
+{{ "<!-- Bloque parcial para el aside -->" | safeHTML }}
+<aside>
+  {{ range .Site.Menus.main }}
+  <div class="item">
+    {{ .Pre }}<a href="{{ .URL }}" title="{{ .Identifier }}" target="_blank">{{ .Name }}</a>
+  </div>
+  {{ end }}
+</aside>

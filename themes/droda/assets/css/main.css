@@ -1,0 +1,181 @@
+/* ESTILOS CSS PARA EL SITIO WEB DE SALAMANDRADEVS */
+
+/* Copyright GNU LGPL. 
+   Puedes copiar, modificar y usar este software bajo los términos de la licencia general de uso público reducida de GNU.
+   Encontrarás una copia de la licencia aquí https://www.gnu.org/licenses/lgpl-3.0.html */
+
+/* Metodología mobile first o pantallas pequeñas primero.
+   Primero se escriben las reglas para el ancho de portview
+   más pequeño a considerar */
+
+/* VARIABLES Y REGLAS GENERALES */
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bgColorDark: #006b91;
+  --bgColorLight: #D2D2D2;
+  --globalScale: 1;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+html {
+  font-size: calc(62.5% * var(--globalScale));
+  background-color: var(--bgColorDark);
+}
+
+/* REGLAS DEL HOME */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-areas: /* No mostramos el aside en móbiles */
+    "navbar"
+    "main"
+    "footer";
+  height: 100vh;
+  margin: 0;
+}
+
+aside {
+  grid-area: aside;
+  display: none;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+aside .item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav {
+    grid-area: navbar;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+main {
+  grid-area: main;
+  margin: 2rem;
+}
+
+main hr {
+  width: 100%;
+}
+
+.articles {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.articles article {
+  width: 30rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.content table {
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+.content table img {
+  width: 3rem;
+}
+
+.content table td {
+  padding: 0 0.3rem;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.greetings {
+  background-color: var(--bgColorLight);
+  width: 80%;
+  heigth: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 780px) {
+  :root {
+    --globalScale: 1.5;
+  }
+
+  body {
+    grid-template-columns: 11rem 1fr;
+    grid-template-areas: /* Tabletas se muestra el aside */
+      "navbar navbar"
+      "aside main"
+      "footer footer";
+  }
+
+  aside {
+    display: flex;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --globalScale: 2;
+  }
+}
