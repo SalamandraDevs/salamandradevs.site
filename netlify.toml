@@ -7,40 +7,14 @@ HUGO_VERSION = "0.72.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
-[context.split1]
-command = "hugo --gc --enableGitInfo"
+# Para usar un sobdominio cambia el nombre de customram por el nombre que tu rama personalizada
+#[context.custombranch]
+#command = "hugo --gc -b https://custombranch.salamandradevs.site"
 
-[context.split1.environment]
-HUGO_VERSION = "0.72.0"
-HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo --gc --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.72.0"
-
-[context.branch-deploy]
-command = "hugo --gc -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.72.0"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
-
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
-#
-# [[redirects]]
-#  from = "https://salamandradevs.netlify.app"
-#  to = "https://salamandradevs.site"
-#  status = 301
-#  force = true
+#[context.custombranch.environment]
+#HUGO_VERSION = "0.72.0"
+#HUGO_ENV = "development"
+#HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
   # Enable CORS.
