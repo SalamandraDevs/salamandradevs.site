@@ -12,7 +12,7 @@ command = "hugo --gc -b https://startpoint.salamandradevs.site"
 
 [context.startpoint.environment]
 HUGO_VERSION = "0.72.0"
-HUGO_ENV = "production"
+HUGO_ENV = "developtment"
 HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
