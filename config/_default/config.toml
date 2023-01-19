@@ -1,6 +1,6 @@
-baseURL = "https://salamandradevs.site/"
+baseURL = "https://startpoint.salamandradevs.site/"
 languageCode = "es-co"
-title = "Salamandra Devs"
+title = "Salamandra Devs - Novatos"
 theme = "droda"
 publishDir = "public_html"
 
