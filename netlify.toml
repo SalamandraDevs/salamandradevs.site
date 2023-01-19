@@ -36,11 +36,11 @@ HUGO_ENABLEGITINFO = "true"
 #   to = "/index.html"
 #   status = 200
 #
-# [[redirects]]
-#  from = "https://salamandradevs.netlify.app"
-#  to = "https://salamandradevs.site"
-#  status = 301
-#  force = true
+[[redirects]]
+  from = "https://startpoint--salamandradevsnetlify.app"
+  to = "https://start.point.salamandradevs.site"
+  status = 301
+  force = true
 
 [[headers]]
   # Enable CORS.
