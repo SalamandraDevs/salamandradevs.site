@@ -29,16 +29,9 @@ HUGO_VERSION = "0.72.0"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
-The following redirect is intended for use with most SPAs that handle
-routing internally.
-[[redirects]]
-   from = "/*"
-   to = "/index.html"
-   status = 200
-
 [[redirects]]
   from = "https://startpoint--salamandradevs.netlify.app/"
-  to = "https://start.point.salamandradevs.site"
+  to = "https://startpoint.salamandradevs.site"
   status = 301
   force = true
 
