@@ -37,7 +37,7 @@ HUGO_ENABLEGITINFO = "true"
 #   status = 200
 #
 [[redirects]]
-  from = "https://startpoint--salamandradevs.netlify.app"
+  from = "https://startpoint--salamandradevs.netlify.app/"
   to = "https://start.point.salamandradevs.site"
   status = 301
   force = true
