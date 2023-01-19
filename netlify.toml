@@ -7,33 +7,13 @@ HUGO_VERSION = "0.72.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
-[context.split1]
-command = "hugo --gc --enableGitInfo"
+[context.startpoint]
+command = "hugo --gc -b https://startpoint.salamandradevs.site"
 
-[context.split1.environment]
+[context.startpoint.environment]
 HUGO_VERSION = "0.72.0"
 HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo --gc --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.72.0"
-
-[context.branch-deploy]
-command = "hugo --gc -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.72.0"
-
-[context.next.environment]
 HUGO_ENABLEGITINFO = "true"
-
-[[redirects]]
-  from = "https://startpoint--salamandradevs.netlify.app/"
-  to = "https://startpoint.salamandradevs.site"
-  status = 301
-  force = true
 
 [[headers]]
   # Enable CORS.
