@@ -7,7 +7,7 @@ HUGO_VERSION = "0.72.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
-# Para usar un sobdominio cambia el nombre de customram por el nombre que tu rama personalizada
+# Para usar un sobdominio cambia el nombre de custombranch por el nombre que tu rama personalizada
 #[context.custombranch]
 #command = "hugo --gc -b https://custombranch.salamandradevs.site"
 
