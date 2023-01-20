@@ -15,6 +15,3 @@ También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandrade
 Este sitio está publicado en la CDN de Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fa212863-f227-4f0d-9260-a24049a95c0e/deploy-status)](https://app.netlify.com/sites/salamandradevs/deploys)
-
-
-test
