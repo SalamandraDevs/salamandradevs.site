@@ -104,6 +104,7 @@ nav {
     padding: 0 2rem;
     background-color: #4f5864;
   }
+  
   main {
     grid-area: main;
     padding: 2rem;
@@ -129,18 +130,11 @@ nav {
     margin: 1rem;
   }
   
-  
   .content table {
     padding-top: 2rem;
     margin: 0 auto;
   }
   
-
-
-
-
-
-
 .content table img {
   width: 3rem;
 }
@@ -156,7 +150,6 @@ footer {
   width: 100%;
   padding: 0 2rem;
   background-color: #4f5864;
-}
 }
 
 .greetings {
