@@ -179,3 +179,16 @@ footer {
     --globalScale: 2;
   }
 }
+aside{
+  background-color: #242930;
+}
+main{
+  background-color: #353b43;
+  margin: 0;
+}
+nav{
+  background-color: #4f5864;
+}
+footer{
+  background-color: #4f5864;
+}
