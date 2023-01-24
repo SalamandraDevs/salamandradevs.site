@@ -81,6 +81,7 @@ aside {
   justify-content: flex-start;
   width: 100%;
   padding: 0 1rem;
+  background-color: #242930;
 }
 
 aside .item {
@@ -101,36 +102,44 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 0 2rem;
+    background-color: #4f5864;
   }
+  main {
+    grid-area: main;
+    padding: 2rem;
+    background-color: #353b43;
+  }
+    
+  main hr {
+    width: 100%;
+  }
+  
+  .articles {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .articles article {
+    width: 30rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  
+  .content table {
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
+  
 
-main {
-  grid-area: main;
-  margin: 2rem;
-}
 
-main hr {
-  width: 100%;
-}
 
-.articles {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
 
-.articles article {
-  width: 30rem;
-  border: 1px solid;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
-}
 
-.content table {
-  padding-top: 2rem;
-  margin: 0 auto;
-}
 
 .content table img {
   width: 3rem;
@@ -146,12 +155,14 @@ footer {
   align-items: center;
   width: 100%;
   padding: 0 2rem;
+  background-color: #4f5864;
+}
 }
 
 .greetings {
   background-color: var(--bgColorLight);
   width: 80%;
-  heigth: 80%;
+  height: 80%;
   margin: 0 auto;
 }
 
@@ -167,28 +178,17 @@ footer {
       "aside main"
       "footer footer";
   }
-
+  
   aside {
     display: flex;
   }
-
 }
+
 
 @media screen and (min-width: 1280px) {
   :root {
     --globalScale: 2;
   }
 }
-aside{
-  background-color: #242930;
-}
-main{
-  background-color: #353b43;
-  margin: 0;
-}
-nav{
-  background-color: #4f5864;
-}
-footer{
-  background-color: #4f5864;
-}
+
+  
