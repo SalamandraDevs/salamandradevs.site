@@ -9,7 +9,11 @@ El equipo de Salamandra Devs lo conforman los colaboradores más activos del sit
 ### Nuestros devs
 Conoce a nuestros desarrolladores, justo donde podrías estar tu.
 
+<<<<<<< HEAD
 | Nombre         | Profesión o habilidades        | Karma      | Avatar                  |
+=======
+| Nombre         | Profesión o habilidades        | Karma      | Avatar |
+>>>>>>> 9b5582b (recreando repositorio)
 | -------------- | ------------------------------ | ---------- | ----------------------- |
 | Odair Trujillo | Desarrollador web y blockchain | Elevado    | ![Odair](odair.jpg)     |
 | Eugenio Llanos | Analista de datos, backend dev | Elevado    | ![Eugenio](eugenio.jpg) |

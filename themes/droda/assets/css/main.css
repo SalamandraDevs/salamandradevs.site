@@ -81,7 +81,10 @@ aside {
   justify-content: flex-start;
   width: 100%;
   padding: 0 1rem;
+<<<<<<< HEAD
   background-color: #242930;
+=======
+>>>>>>> 9b5582b (recreando repositorio)
 }
 
 aside .item {
@@ -102,6 +105,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 0 2rem;
+<<<<<<< HEAD
     background-color: #4f5864;
   }
   
@@ -135,6 +139,39 @@ nav {
     margin: 0 auto;
   }
   
+=======
+  }
+
+main {
+  grid-area: main;
+  margin: 2rem;
+}
+
+main hr {
+  width: 100%;
+}
+
+.articles {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.articles article {
+  width: 30rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.content table {
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+>>>>>>> 9b5582b (recreando repositorio)
 .content table img {
   width: 3rem;
 }
@@ -149,13 +186,20 @@ footer {
   align-items: center;
   width: 100%;
   padding: 0 2rem;
+<<<<<<< HEAD
   background-color: #4f5864;
+=======
+>>>>>>> 9b5582b (recreando repositorio)
 }
 
 .greetings {
   background-color: var(--bgColorLight);
   width: 80%;
+<<<<<<< HEAD
   height: 80%;
+=======
+  heigth: 80%;
+>>>>>>> 9b5582b (recreando repositorio)
   margin: 0 auto;
 }
 
@@ -171,17 +215,29 @@ footer {
       "aside main"
       "footer footer";
   }
+<<<<<<< HEAD
   
   aside {
     display: flex;
   }
 }
 
+=======
+
+  aside {
+    display: flex;
+  }
+
+}
+>>>>>>> 9b5582b (recreando repositorio)
 
 @media screen and (min-width: 1280px) {
   :root {
     --globalScale: 2;
   }
 }
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> 9b5582b (recreando repositorio)
