@@ -192,6 +192,13 @@ footer {
 >>>>>>> 9b5582b (recreando repositorio)
 }
 
+.bg-logo {
+  background-image: url('');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .greetings {
   background-color: var(--bgColorLight);
   width: 80%;

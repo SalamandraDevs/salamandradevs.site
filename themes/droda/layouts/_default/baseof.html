@@ -16,6 +16,7 @@
       {{ partial "navbar.html" . }}
       {{ block "main" . }}{{ end }}
       {{ partial "footer.html" . }}
+      <div class="bg-logo"/>
   </body>
   {{ "<!-- Main Script -->" | safeHTML }}
   {{ $mainScript := resources.Get "js/main.js" }}
