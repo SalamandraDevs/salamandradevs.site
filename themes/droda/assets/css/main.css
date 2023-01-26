@@ -12,232 +12,174 @@
 @charset "UTF-8";
 
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 :root {
-  --bgColorDark: #006b91;
-  --bgColorLight: #D2D2D2;
-  --globalScale: 1;
+   --bgColorDark: #006b91;
+   --bgColorLight: #D2D2D2;
+   --globalScale: 1;
 }
 
 h1 {
-  font-size: 6rem;
+   font-size: 6rem;
 }
 
 h2 {
-  font-size: 4rem;
+   font-size: 4rem;
 }
 
 h3 {
-  font-size: 3rem;
+   font-size: 3rem;
 }
 
 h4 {
-  font-size: 2rem;
+   font-size: 2rem;
 }
 
 p {
-  font-size: 1.5rem;
+   font-size: 1.5rem;
 }
 
 h1, h2, h3, h4, p {
-  padding: 0.5rem 0;
-  margin: 0;
+   padding: 0.5rem 0;
+   margin: 0;
 }
 
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
+a:link,
+a:visited,
+a:hover,
+a:active {
+   text-decoration: none;
+   font-size: 1.5rem;
+}
 
 html {
-  font-size: calc(62.5% * var(--globalScale));
-  background-color: var(--bgColorDark);
+   font-size: calc(62.5% * var(--globalScale));
+   background-color: var(--bgColorDark);
 }
 
 /* REGLAS DEL HOME */
 
 body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
-  grid-template-areas: /* No mostramos el aside en móbiles */
-    "navbar"
-    "main"
-    "footer";
-  height: 100vh;
-  margin: 0;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 5rem 1fr 5rem;
+   grid-template-areas: /* No mostramos el aside en móbiles */
+      "navbar"
+      "main"
+      "footer";
+   height: 100vh;
+   margin: 0;
 }
 
 aside {
-  grid-area: aside;
-  display: none;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 0 1rem;
-<<<<<<< HEAD
-  background-color: #242930;
-=======
->>>>>>> 9b5582b (recreando repositorio)
+   grid-area: aside;
+   display: none;
+   flex-flow: column nowrap;
+   align-items: flex-start;
+   justify-content: flex-start;
+   width: 100%;
+   padding: 0 1rem;
+   background-color: #242930;
 }
 
 aside .item {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1rem 0;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1.5rem;
+   width: 100%;
+   padding: 1rem 0;
 }
 
 nav {
-    grid-area: navbar;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 2rem;
-<<<<<<< HEAD
-    background-color: #4f5864;
-  }
-  
-  main {
-    grid-area: main;
-    padding: 2rem;
-    background-color: #353b43;
-  }
-    
-  main hr {
-    width: 100%;
-  }
-  
-  .articles {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  
-  .articles article {
-    width: 30rem;
-    border: 1px solid;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-  }
-  
-  .content table {
-    padding-top: 2rem;
-    margin: 0 auto;
-  }
-  
-=======
-  }
+   grid-area: navbar;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 0 2rem;
+   background-color: #4f5864;
+}
 
 main {
-  grid-area: main;
-  margin: 2rem;
+   grid-area: main;
+   padding: 2rem;
+   background-color: #353b43;
 }
 
 main hr {
-  width: 100%;
+   width: 100%;
 }
 
 .articles {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: flex-start;
+   justify-content: space-between;
 }
 
 .articles article {
-  width: 30rem;
-  border: 1px solid;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
+   width: 30rem;
+   border: 1px solid;
+   border-radius: 0.5rem;
+   padding: 1rem;
+   margin: 1rem;
 }
 
 .content table {
-  padding-top: 2rem;
-  margin: 0 auto;
+   padding-top: 2rem;
+   margin: 0 auto;
 }
 
->>>>>>> 9b5582b (recreando repositorio)
 .content table img {
-  width: 3rem;
+   width: 3rem;
 }
 
 .content table td {
-  padding: 0 0.3rem;
+   padding: 0 0.3rem;
 }
 
 footer {
-  grid-area: footer;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0 2rem;
-<<<<<<< HEAD
-  background-color: #4f5864;
-=======
->>>>>>> 9b5582b (recreando repositorio)
+   grid-area: footer;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 0 2rem;
+   background-color: #4f5864;
 }
 
 .greetings {
-  background-color: var(--bgColorLight);
-  width: 80%;
-<<<<<<< HEAD
-  height: 80%;
-=======
-  heigth: 80%;
->>>>>>> 9b5582b (recreando repositorio)
-  margin: 0 auto;
+   background-color: var(--bgColorLight);
+   width: 80%;
+   height: 80%;
+   margin: 0 auto;
 }
 
 @media screen and (min-width: 780px) {
-  :root {
-    --globalScale: 1.5;
-  }
+   :root {
+      --globalScale: 1.5;
+   }
 
-  body {
-    grid-template-columns: 11rem 1fr;
-    grid-template-areas: /* Tabletas se muestra el aside */
-      "navbar navbar"
-      "aside main"
-      "footer footer";
-  }
-<<<<<<< HEAD
-  
-  aside {
-    display: flex;
-  }
+   body {
+      grid-template-columns: 11rem 1fr;
+      grid-template-areas: /* Tabletas se muestra el aside */
+	 "navbar navbar"
+	 "aside main"
+	 "footer footer";
+   }
+
+   aside {
+      display: flex;
+   }
 }
-
-=======
-
-  aside {
-    display: flex;
-  }
-
-}
->>>>>>> 9b5582b (recreando repositorio)
 
 @media screen and (min-width: 1280px) {
-  :root {
-    --globalScale: 2;
-  }
+   :root {
+      --globalScale: 2;
+   }
 }
-<<<<<<< HEAD
 
-  
-=======
->>>>>>> 9b5582b (recreando repositorio)
