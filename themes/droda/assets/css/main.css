@@ -16,7 +16,9 @@
 }
 
 :root {
-   --bgColorDark: #006b91;
+   --bgColorDark: #242930;
+   --bgColorMidDark: #353b43;
+   --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
    --globalScale: 1;
 }
@@ -56,7 +58,7 @@ a:active {
 
 html {
    font-size: calc(62.5% * var(--globalScale));
-   background-color: var(--bgColorDark);
+   background-color: var(--bgColorLight);
 }
 
 /* REGLAS DEL HOME */
@@ -81,7 +83,7 @@ aside {
    justify-content: flex-start;
    width: 100%;
    padding: 0 1rem;
-   background-color: #242930;
+   background-color: var(--bgColorDark);
 }
 
 aside .item {
@@ -102,13 +104,13 @@ nav {
    justify-content: space-between;
    width: 100%;
    padding: 0 2rem;
-   background-color: #4f5864;
+   background-color: var(--bgColorLightDark);
 }
 
 main {
    grid-area: main;
    padding: 2rem;
-   background-color: #353b43;
+   background-color: var(--bgColorMidDark);
 }
 
 main hr {
@@ -149,11 +151,11 @@ footer {
    align-items: center;
    width: 100%;
    padding: 0 2rem;
-   background-color: #4f5864;
+   background-color: var(--bgColorLightDark);
 }
 
 .greetings {
-   background-color: var(--bgColorLight);
+   background-color: var(--bgColorMidDark);
    width: 80%;
    height: 80%;
    margin: 0 auto;
