@@ -59,6 +59,7 @@ a:active {
 html {
    font-size: calc(62.5% * var(--globalScale));
    background-color: var(--bgColorLight);
+   height: 100%;
 }
 
 /* REGLAS DEL HOME */
@@ -71,7 +72,7 @@ body {
       "navbar"
       "main"
       "footer";
-   height: 100vh;
+   height: 100%;
    margin: 0;
 }
 
