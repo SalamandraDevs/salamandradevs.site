@@ -193,7 +193,7 @@ footer {
 }
 
 .bg-logo {
-  background-image: url('');
+  background-image: url('../images/salamandra.svg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
