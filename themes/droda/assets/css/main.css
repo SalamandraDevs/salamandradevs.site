@@ -112,6 +112,11 @@ main {
    grid-area: main;
    padding: 2rem;
    background-color: var(--bgColorMidDark);
+   background-image: url('../images/salamandra.svg');
+   background-size: 10rem;
+   background-position-x: right;
+   background-position-y: bottom;
+   background-repeat: no-repeat;
 }
 
 main hr {
@@ -156,7 +161,6 @@ footer {
 }
 
 .greetings {
-   background-color: var(--bgColorMidDark);
    width: 80%;
    height: 80%;
    margin: 0 auto;

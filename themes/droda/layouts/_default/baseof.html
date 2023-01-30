@@ -10,18 +10,19 @@
     {{ "<!-- Main styles -->" | safeHTML }}
     {{ $homeStyles := resources.Get "css/main.css"}}
     <link rel="stylesheet" href="{{ $homeStyles.Permalink }}">
+    {{ "<!-- Main Script -->" | safeHTML }}
+    {{ $mainScript := resources.Get "js/main.js" }}
+    <script src="{{ $mainScript.Permalink }}"></script>
+    {{ "<!-- JS Thirparties -->" | safeHTML }}
+    {{ range .Site.Params.plugins.js }}
+    <script src="{{ .link | absURL }}" crossorigin="anonymous"></script>
+  {{ end }}
   </head>
   <body>
       {{ partial "aside.html" . }}
       {{ partial "navbar.html" . }}
       {{ block "main" . }}{{ end }}
       {{ partial "footer.html" . }}
+      <div class="bg-logo"></div>
   </body>
-  {{ "<!-- Main Script -->" | safeHTML }}
-  {{ $mainScript := resources.Get "js/main.js" }}
-  <script src="{{ $mainScript.Permalink }}"></script>
-  {{ "<!-- JS Thirparties -->" | safeHTML }}
-  {{ range .Site.Params.plugins.js }}
-  <script src="{{ .link | absURL }}" crossorigin="anonymous"></script>
-  {{ end }}
 </html>
