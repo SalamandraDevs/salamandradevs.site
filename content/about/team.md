@@ -14,6 +14,6 @@ Conoce a nuestros desarrolladores, justo donde podrías estar tu.
 | Odair Trujillo | Desarrollador web y blockchain | Elevado    | ![Odair](odair.jpg)     |
 | Eugenio Llanos | Analista de datos, backend dev | Elevado    | ![Eugenio](eugenio.jpg) |
 | Nicolás Llanos | Desarrollador backend, bot dev | Intermedio | ![Nicolás](nicolas.jpg) |
-| Nicolás Llanos | Desarrollador backend, bot dev | Intermedio | ![Ricardo](ricardo.jpg) |
+| Ricardo García | Desarrollador frontend         | Principiante | ![Ricardo](ricardo.jpg) |
 
 
