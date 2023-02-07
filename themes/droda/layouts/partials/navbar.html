@@ -1,9 +1,11 @@
 {{ "<!-- Partial block for navbar -->" | safeHTML }}
 <nav>
+  <ul>
   {{ with .Site.GetPage "home" }}
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   {{ range .Site.Sections }}
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
+  </ul>
 </nav>
