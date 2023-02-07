@@ -13,6 +13,8 @@
 
 * {
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 :root {
@@ -21,6 +23,7 @@
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
    --globalScale: 1;
+   
 }
 
 h1 {
@@ -99,14 +102,41 @@ aside .item {
 
 nav {
    grid-area: navbar;
+   background-color: var(--bgColorLightDark);
+   width: 100%;
+}
+
+nav ul {
    display: flex;
    flex-flow: row nowrap;
    align-items: center;
-   justify-content: space-between;
+   justify-content: flex-start;
+   list-style-type: none;
    width: 100%;
-   padding: 0 2rem;
-   background-color: var(--bgColorLightDark);
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
 }
+
+nav li {
+   display: flex;
+   align-items: center;
+   height: 100%;
+ }
+ 
+nav a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ nav li:hover {
+   background-color: #111;
+ }
 
 main {
    grid-area: main;
