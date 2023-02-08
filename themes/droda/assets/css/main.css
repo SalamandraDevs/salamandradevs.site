@@ -22,6 +22,7 @@
    --bgColorMidDark: #353b43;
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
+   --navbarHoverColor: #111;
    --globalScale: 1;
    
 }
@@ -116,7 +117,6 @@ nav ul {
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #333;
 }
 
 nav li {
@@ -134,7 +134,7 @@ nav a {
  }
  
  nav li:hover {
-   background-color: #111;
+   background-color: var(--navbarHoverColor);
  }
 
 main {
