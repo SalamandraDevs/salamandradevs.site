@@ -141,11 +141,20 @@ main {
    grid-area: main;
    padding: 2rem;
    background-color: var(--bgColorMidDark);
-   background-image: url('../images/salamandra.svg');
+   background-image: url('../images/salamandra_margin.svg');
    background-size: 10rem;
    background-position-x: right;
    background-position-y: bottom;
    background-repeat: no-repeat;
+}
+
+/* Regla que aplica solo a firefox */
+@-moz-document url-prefix() {
+   main {
+      background-image: url('../images/salamandra.svg');
+      background-position-x: right 1rem;
+      background-position-y: bottom 1rem;
+   }
 }
 
 main hr {
