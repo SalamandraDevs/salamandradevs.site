@@ -21,15 +21,15 @@ Rust es un lenguaje de programación moderno y de alto rendimiento que se ha gan
 
 Rust ofrece una serie de ventajas sobre otros lenguajes de programación populares como C++ y JavaScript.
 
-Seguridad: A diferencia de C++, Rust es un lenguaje de programación que se enfoca en la seguridad, lo que significa que se han tomado medidas especiales para prevenir errores comunes de programación, como los problemas de punteros nulos y la corrupción de memoria. Esto hace que Rust sea más seguro que C++ en muchos casos.
+**Seguridad:** A diferencia de C++, Rust es un lenguaje de programación que se enfoca en la seguridad, lo que significa que se han tomado medidas especiales para prevenir errores comunes de programación, como los problemas de punteros nulos y la corrupción de memoria. Esto hace que Rust sea más seguro que C++ en muchos casos.
 
-Rendimiento: Rust es conocido por su alto rendimiento, lo que lo hace ideal para aplicaciones que requieren una gran cantidad de procesamiento. En muchos casos, Rust puede ser más rápido que C++ gracias a su sistema de administración de memoria y otros mecanismos de optimización.
+**Rendimiento:** Rust es conocido por su alto rendimiento, lo que lo hace ideal para aplicaciones que requieren una gran cantidad de procesamiento. En muchos casos, Rust puede ser más rápido que C++ gracias a su sistema de administración de memoria y otros mecanismos de optimización.
 
-Flexibilidad: A diferencia de JavaScript, Rust es un lenguaje de programación de bajo nivel que ofrece un control más cercano del hardware subyacente. Esto lo hace ideal para aplicaciones de sistema, como controladores de dispositivos y sistemas operativos, así como para aplicaciones web de alto rendimiento.
+**Flexibilidad:** A diferencia de JavaScript, Rust es un lenguaje de programación de bajo nivel que ofrece un control más cercano del hardware subyacente. Esto lo hace ideal para aplicaciones de sistema, como controladores de dispositivos y sistemas operativos, así como para aplicaciones web de alto rendimiento.
 
-Escalabilidad: Rust es un lenguaje de programación altamente escalable que es fácil de mantener a medida que crece el tamaño de tu código base. A medida que tu proyecto se hace más grande, Rust te permite organizar tu código en módulos y paquetes para una mayor facilidad de mantenimiento.
+**Escalabilidad:** Rust es un lenguaje de programación altamente escalable que es fácil de mantener a medida que crece el tamaño de tu código base. A medida que tu proyecto se hace más grande, Rust te permite organizar tu código en módulos y paquetes para una mayor facilidad de mantenimiento.
 
-Windows:
+#### Windows:
 
 Visita la página oficial de Rust en https://www.rust-lang.org/es. En el menú principal, haz clic en "Instalación" y selecciona la opción correspondiente para Windows.
 
@@ -39,7 +39,7 @@ Sigue las instrucciones del instalador y acepta los términos de la licencia.
 
 Una vez que la instalación esté completa, abre tu terminal o línea de comandos y escribe "rustc --version" para verificar que Rust se haya instalado correctamente.
 
-MacOS:
+#### MacOS:
 
 Visita la página oficial de Rust en https://www.rust-lang.org/es. En el menú principal, haz clic en "Instalación" y selecciona la opción correspondiente para macOS.
 
@@ -53,7 +53,7 @@ Sigue las instrucciones del instalador y acepta los términos de la licencia.
 
 Una vez que la instalación esté completa, abre tu terminal o línea de comandos y escribe "rustc --version" para verificar que Rust se haya instalado correctamente.
 
-Linux:
+#### Linux:
 
 Visita la página oficial de Rust en https://www.rust-lang.org/es. En el menú principal, haz clic en "Instalación" y selecciona la opción correspondiente para tu distribución de Linux.
 
@@ -67,7 +67,26 @@ Sigue las instrucciones del instalador y acepta los términos de la licencia.
 
 Una vez que la instalación esté completa, abre tu terminal o línea de comandos y escribe "rustc --version" para verificar que Rust se haya instalado correctamente.
 
-### Hola, mundo
+### Crear un Proyecto en Rust
+Antes de comenzar a escribir código en Rust, primero tenemos que crear un proyecto con el gestor de paquetes *cargo*. 
+
+Si vienes de Python o JavaScript con NodeJS te serán familiares los gestores *pip* y *npm*, *cargo* es el equivalente a las herramientas mencionadas anteriormente.
+
+Para construir nuestro proyecto de Rust usando cargo debemos abrir una terminal de comandos y ejecutar el comando:
+
+```bash
+ 
+ cargo new <nombre-de-tu-proyecto>
+  
+```
+
+```bash
+ 
+ cargo new hola_mundo
+ 
+```
+
+#### Hola, mundo
 El programa "Hola, mundo" es un clásico en la programación, y es una excelente manera de comenzar a aprender un nuevo lenguaje. Aquí está el código para imprimir "Hola, mundo" en Rust:
 
 ```rust
@@ -80,7 +99,7 @@ El programa "Hola, mundo" es un clásico en la programación, y es una excelente
 
 Este código define una función llamada "main" que imprime "Hola, mundo!" en la consola.
 
-### Variables y tipos de datos
+#### Variables y tipos de datos
 Rust es un lenguaje de programación con tipos de datos estáticos, lo que significa que debes declarar el tipo de una variable antes de usarla. Aquí hay algunos ejemplos de cómo declarar variables en Rust:
 
 ```rust
@@ -99,7 +118,7 @@ Rust es un lenguaje de programación con tipos de datos estáticos, lo que signi
  
 ```
 
-### Funciones
+#### Funciones
 Las funciones son bloques de código reutilizable en Rust. Aquí hay un ejemplo de cómo definir una función en Rust:
 
 ```rust
@@ -117,7 +136,7 @@ Las funciones son bloques de código reutilizable en Rust. Aquí hay un ejemplo 
  
 ```
 
-### Estructuras de datos
+#### Estructuras de datos
 Rust también admite estructuras de datos, que son una colección de variables con diferentes tipos de datos. Aquí hay un ejemplo de cómo definir una estructura de datos en Rust:
 
 ```rust
@@ -138,6 +157,28 @@ Rust también admite estructuras de datos, que son una colección de variables c
  println!("{} tiene {} años.", persona.nombre, persona.edad) ; 
  
 ```
+### Ponte a Prueba
+En el siguiente ejercio, declaramos tres variables diferentes: una entera, una flotante y una cadena de caracteres. Luego imprimimos el valor de cada variable en la consola
+
+```rust
+ 
+ fn main() {
+     // Declaración de una variable entera
+     // Tú código aquí : crea una nueva variable y asígnale un valor, y luego imprime el valor de la variable.
+
+     // Declaración de una variable flotante
+     // Tú código aquí : crea una nueva variable y asígnale un valor, y luego imprime el valor de la variable.
+
+     // Declaración de una cadena de caracteres
+     // Tú código aquí : crea una nueva variable y asígnale un valor, y luego imprime el valor de la variable.
+
+     // Imprimir las variables
+     // Tú código aquí : imprime el valor de las variables en la consola.
+     
+ }
+ 
+```
+Para completar el ejercicio, te invito a crear una nueva variable y asignarle un valor de tu elección. Luego, imprime el valor de la nueva variable en la consola utilizando la función "println".
 
 ### Conclusiones
 Rust es un lenguaje de programación poderoso y seguro que es excelente para escribir aplicaciones de sistema de alto rendimiento. En este artículo, te mostré cómo instalar Rust y te di algunos ejemplos de cómo escribir código en Rust. Espero que esto te haya ayudado a comenzar a programar en Rust. ¡Buena suerte!
