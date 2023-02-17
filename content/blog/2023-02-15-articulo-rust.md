@@ -2,7 +2,7 @@
 title: ¿Por que deberías aprender Rust?
 date: 2023-02-16T12:00:06+09:00
 author: Craw Katt
-description: Artículo de Rust.
+description: Si te interesa el lenguaje RUST aquí te enseño a instalarlo y probarlo
 draft: false
 tags:
   - programación
