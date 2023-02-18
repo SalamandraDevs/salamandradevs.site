@@ -10,6 +10,15 @@ Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuent
 
 También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandradevs), allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experiemtado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
 
+### Nuestro Muckup
+Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con el Muckup. Esto es lo que deberíamos buscar, si quieres hacer algo para llegar a esta meta, adelante!!
+
+- El home
+![Muckup del Home](./images/muckup_home.jpg)
+
+- Blog
+![Muckup del Blog](./images/muckup_blog.jpg)
+
 ### Cómo correr el sitio
 
 El sitio web está desarrollado en HTML, CSS y Javascript, todo vanilla, pero usando el compilador de sitios web estáticos **Hugo**. La versión 0.72 debería bastar, pero al día de hoy está disponible la versión 110. Intenta seguir estos pasos, no están completamente detallados porque varía de sistema a sistema pero en general es lo que sigue:
