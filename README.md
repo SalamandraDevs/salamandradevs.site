@@ -13,11 +13,13 @@ También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandrade
 ### Nuestro Muckup
 Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con el Muckup. Esto es lo que deberíamos buscar, si quieres hacer algo para llegar a esta meta, adelante!!
 
-- El home
-![Muckup del Home](./images/muckup_home.jpg)
+- El Home
 
-- Blog
-![Muckup del Blog](./images/muckup_blog.jpg)
+![Muckup del Home](static/images/muckup_home.jpg)
+
+- El Blog
+
+![Muckup del Blog](static/images/muckup_blog.jpg)
 
 ### Cómo correr el sitio
 
