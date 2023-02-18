@@ -11,7 +11,7 @@ Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuent
 También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandradevs), allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experiemtado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
 
 ### Nuestro Muckup
-Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con el Muckup. Esto es el diseño base con el que debemos trabajar, no es obligatorio, pero si quieres hacer algo para llegar a esta meta adelante!!
+Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con el muckup. Esto es el diseño base con el que debemos trabajar, no es obligatorio, pero si quieres hacer algo para llegar a esta meta adelante!!
 
 - El Home
 
@@ -20,6 +20,8 @@ Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con 
 - El Blog
 
 ![Muckup del Blog](static/images/muckup_blog.jpg)
+
+Si quieres comentarnos algo sobre el muckup, lo puedes hacer directamente en figma con este [enlace](https://www.figma.com/file/PmGd5FOrFBuaIYpJZWLJzJ/Salamandra-Devs?node-id=0%3A1&t=s0O5F1VyVbQZKxgw-0).
 
 ### Cómo correr el sitio
 
