@@ -11,7 +11,7 @@ Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuent
 También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandradevs), allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experiemtado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
 
 ### Nuestro Muckup
-Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con el Muckup. Esto es lo que deberíamos buscar, si quieres hacer algo para llegar a esta meta, adelante!!
+Gracias al compañero [Phosphorus](https://t.me/PhosphorusM) que nos ayudó con el Muckup. Esto es el diseño base con el que debemos trabajar, no es obligatorio, pero si quieres hacer algo para llegar a esta meta adelante!!
 
 - El Home
 
