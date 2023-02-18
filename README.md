@@ -6,11 +6,7 @@ Este sitio es un desarrollo comunitario liderado desde Salamandra Devs con el ap
 
 Puedes ayudar a la construcción del sitio con tus contribuciones mientras vas aprendiendo. 
 
-Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuenta de GitHub, luego lo clonas en tu equipo local, creas una nueva rama con un nombre alusivo al cambio que desees hacer, como por ejemplo _"cambio-color"_ o _"nuevo-boton"_, haces push a tu repositorio y esto te permitirá crear el `pull-request` con el que tu cambio será analizado por el equipo e incorporado a la página principal después de discutirlo contigo. 
-
-También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandradevs), allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experiemtado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
-
-Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuenta de GitHub, luego lo clonas en tu equipo local, creas una nueva rama con un nombre alusivo al cambio que desees hacer, como por ejemplo _"cambio-color"_ o _"nuevo-boton"_ y te cambias a ella, realizas los cambios que desees y luego haces push a tu repositorio. Eesto te permitirá crear el `pull-request` con el que tu cambio será analizado por el equipo e incorporado a la página principal después de discutirlo contigo. 
+Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuenta de GitHub, luego lo clonas en tu equipo local, creas una nueva rama con un nombre alusivo al cambio que desees hacer, como por ejemplo _"cambio-color"_ o _"nuevo-boton"_ y te cambias a ella (`git checkout -b nuevo-boton`), realizas los cambios que desees y luego haces push a tu repositorio remoto (`git push origin nuevo-boton`). Esto te permitirá crear el `pull-request` en GitHub, con el que tu cambio será analizado por el equipo e incorporado a la página principal después de discutirlo contigo. 
 
 También, debes ingresar al grupo de télegram [aquí](https://t.me/salamandradevs), allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experiemtado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
 
