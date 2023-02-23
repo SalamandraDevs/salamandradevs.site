@@ -133,9 +133,9 @@ nav a {
    text-decoration: none;
  }
  
- nav li:hover {
+nav li:hover {
    background-color: var(--navbarHoverColor);
- }
+}
 
 main {
    grid-area: main;
@@ -187,6 +187,11 @@ main hr {
 
 .content table td {
    padding: 0 0.3rem;
+}
+
+.content .highlight code {
+   white-space: pre-wrap;
+   overflow-x: auto;
 }
 
 footer {
