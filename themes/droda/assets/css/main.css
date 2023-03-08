@@ -22,7 +22,6 @@
    --bgColorMidDark: #353b43;
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
-   --navbarHoverColor: #111;
    --globalScale: 1;
    
 }
@@ -119,6 +118,22 @@ nav ul {
    overflow: hidden;
 }
 
+.hover {
+   --c:linear-gradient(#1482c8 0 0); /* update the color here */
+
+   padding-bottom: .15em;
+   background: var(--c), var(--c);
+   background-size: .3em .1em;
+   background-position:50% 100%;
+   background-repeat: no-repeat;
+   transition: .3s linear, background-size .3s .2s linear;
+}
+
+.hover:hover {
+   background-size: 50% .1em;
+   background-position: 10% 100%, 90% 100%;
+}
+
 nav li {
    display: flex;
    align-items: center;
@@ -132,10 +147,6 @@ nav a {
    padding: 1rem 1.5rem;
    text-decoration: none;
  }
- 
-nav li:hover {
-   background-color: var(--navbarHoverColor);
-}
 
 main {
    grid-area: main;

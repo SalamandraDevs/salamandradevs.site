@@ -2,3 +2,4 @@
 \#*#
 public_html/
 .hugo_build.lock
+.idea/
