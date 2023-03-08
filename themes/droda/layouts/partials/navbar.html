@@ -2,10 +2,10 @@
 <nav>
   <ul>
   {{ with .Site.GetPage "home" }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  <li><a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   {{ range .Site.Sections }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  <li><a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   </ul>
 </nav>

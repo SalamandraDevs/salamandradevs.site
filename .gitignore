@@ -2,3 +2,8 @@
 \#*#
 public_html/
 .hugo_build.lock
+<<<<<<< HEAD
+.idea/
+=======
+.idea/
+>>>>>>> c7947e0 (borrando articulo descartado)
