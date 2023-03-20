@@ -18,7 +18,7 @@
 }
 
 :root {
-   --bgColorDark: #242930;
+   --bgColorDark: #0e0e0e;
    --bgColorMidDark: #353b43;
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
@@ -101,7 +101,7 @@ aside .item {
 
 nav {
    grid-area: navbar;
-   background-color: var(--bgColorLightDark);
+   background-color: var(--bgColorDark);
    width: 100%;
 }
 
