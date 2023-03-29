@@ -102,6 +102,7 @@ aside .item {
 nav {
    display: flex;
    justify-content: space-between;
+   align-items: center;
    grid-area: navbar;
    background-color: var(--bgColorDark);
    width: 100%;
@@ -109,7 +110,6 @@ nav {
 
 nav div {
    display: flex;
-   align-self: center;
    flex-flow: nowrap;
    width: 100%;
 }
