@@ -112,6 +112,8 @@ nav div {
    display: flex;
    flex-flow: nowrap;
    width: 100%;
+   align-items: center;
+   justify-content: start;
 }
 
 nav ul {
