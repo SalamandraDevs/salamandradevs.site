@@ -1,11 +1,9 @@
 {{ "<!-- Partial block for navbar -->" | safeHTML }}
 <nav>
   {{ with .Site.GetPage "home" }}
-  <div> <img src=".params.homeIcon|abs url" alt=""> <a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></div>
+  <div><img src="{{ .Params.homeIcon | absURL }}" alt=""><a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></div>
   {{ end }}
-  
   <ul>
-  
   {{ range .Site.Sections }}
   <li><a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
