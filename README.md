@@ -39,3 +39,13 @@ Este sitio está publicado en la CDN de Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fa212863-f227-4f0d-9260-a24049a95c0e/deploy-status)](https://app.netlify.com/sites/salamandradevs/deploys)
 
+# Lista de Tareas
+
+- Background image fondo muckup (pendiente) 
+- lo que antes teniamos en el aside (range) pasar al index despues del <div\> {realizado}
+- Organizar el contenido del aside en el index {realizado}
+- Hacer el fondo en base al muckup con svg en Krita (preferiblemente hacer el fondo en CSS aplicando el blur) {pendiente}
+- Usar Hugo para usar la nueva imagen de la Salamandra a introducir usando 
+
+    `<img src = "{{ .Params.imageHero | absURL }}">` [ [Realizado] ]
+- Acomodar el main de la plantilla principal de "baseof" {pendiente}
