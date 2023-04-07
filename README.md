@@ -41,10 +41,11 @@ Este sitio está publicado en la CDN de Netlify
 
 # Lista de Tareas
 
-Si este proyecto te interesa, aquí hay una lista de tareas de la cual puede escoger una de las siguientes tareas a continuación:
+Si este proyecto te interesa, aquí hay una lista de tareas de la cual puedes escoger una de las siguientes tareas a continuación:
 
-- Hacer el fondo con base en muckup con svg en algún software de edición de imagenes (Photoshop, Krita, Gimp, etc) {pendiente}
+- Hacer el fondo con base en muckup con svg en algún software de edición de imagenes (Photoshop, Krita, Gimp, etc)
 - Trasladar los enlaces que hay en el aside para dentro del main cuando se muestra el 
-home, tal como están en el muckup añadiendo el icono de jitsi {pendiente}
-- Ocultar el aside en la vista de escritorio. {pendiente}
-- Crear un botón hamburguesa para mostrar el aside en la vista de móviles {pendiente}
+home, tal como están en el muckup añadiendo el icono de jitsi
+- Ocultar el aside en la vista de escritorio.
+- Crear un botón hamburguesa para mostrar el aside en la vista de móviles
+- Crear los @fontface para los tipos de fuente que hay dentro de `themes/droda/static/fonts` y aplicarlos a todo el sitio respetando los estilos bold para los títulos y los estilos normales para el texto. Además escoger un color claro para las fuentes.
