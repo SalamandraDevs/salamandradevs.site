@@ -41,11 +41,10 @@ Este sitio está publicado en la CDN de Netlify
 
 # Lista de Tareas
 
-- Background image fondo muckup (pendiente) 
-- lo que antes teniamos en el aside (range) pasar al index despues del <div\> {realizado}
-- Organizar el contenido del aside en el index {realizado}
-- Hacer el fondo en base al muckup con svg en Krita (preferiblemente hacer el fondo en CSS aplicando el blur) {pendiente}
-- Usar Hugo para usar la nueva imagen de la Salamandra a introducir usando 
+Si este proyecto te interesa, aquí hay una lista de tareas de la cual puede escoger una de las siguientes tareas a continuación:
 
-    `<img src = "{{ .Params.imageHero | absURL }}">` [ [Realizado] ]
-- Acomodar el main de la plantilla principal de "baseof" {pendiente}
+- Hacer el fondo con base en muckup con svg en algún software de edición de imagenes (Photoshop, Krita, Gimp, etc) {pendiente}
+- Trasladar los enlaces que hay en el aside para dentro del main cuando se muestra el 
+home, tal como están en el muckup añadiendo el icono de jitsi {pendiente}
+- Ocultar el aside en la vista de escritorio. {pendiente}
+- Crear un botón hamburguesa para mostrar el aside en la vista de móviles {pendiente}
