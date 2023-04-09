@@ -236,6 +236,29 @@ footer {
    margin: 0 auto;
 }
 
+.boton-movil {
+   display: flex;
+   position: relative;
+   width: 4rem;
+   height: 4rem;
+   right: 0.4rem;
+
+   background-image: url('../images/menu.png');
+   background-color: transparent; /* Cuando usamos background-image se pone el background-color en blanco por default por eso le indicamos que sea transparente para que se pueda ver la imagen. */
+   background-position: top left;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   border: none;
+
+   transition: background-image ease 0.2s;
+
+}
+
+.boton-movil[data-visible="true"] {
+   background-image: url('../images/menu-abierto.png');
+}
+
 @media screen and (min-width: 780px) {
    :root {
       --globalScale: 1.5;
@@ -252,6 +275,11 @@ footer {
    aside {
       display: flex;
    }
+
+   .boton-movil {
+      display: none;
+   }
+   
 }
 
 @media screen and (min-width: 1280px) {
