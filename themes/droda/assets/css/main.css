@@ -79,19 +79,21 @@ body {
 }
 
 aside {
+   position: absolute;
+   inset: 0 50%;
    grid-area: aside;
    display: none;
    flex-flow: column nowrap;
    align-items: flex-start;
    justify-content: flex-start;
-   width: 100%;
+   width: 50%;
    padding: 0 1rem;
    background-color: var(--bgColorDark);
 }
 
 aside .item {
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: column nowrap;
    align-items: center;
    justify-content: space-between;
    font-size: 1.5rem;
@@ -122,7 +124,7 @@ nav div img:first-child {
 }
 
 nav ul {
-   display: flex;
+   display: none;
    flex-flow: row nowrap;
    align-items: center;
    justify-content: flex-end;
@@ -163,6 +165,29 @@ nav a {
    padding: 1rem 1.5rem;
    text-decoration: none;
  }
+
+nav button {
+   display: flex;
+   position: absolute;
+   width: 4rem;
+   height: 4rem;
+   right: 0.4rem;
+
+   background-image: url('../images/menu.png');
+   background-color: transparent; /* Cuando usamos background-image se pone el background-color en blanco por default por eso le indicamos que sea transparente para que se pueda ver la imagen. */
+   background-position: top left;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   border: none;
+
+   transition: background-image ease 0.2s;
+
+}
+
+nav button[data-visible="true"] {
+   background-image: url('../images/menu-abierto.png');
+} 
 
 main {
    grid-area: main;
@@ -236,29 +261,6 @@ footer {
    margin: 0 auto;
 }
 
-.boton-movil {
-   display: flex;
-   position: relative;
-   width: 4rem;
-   height: 4rem;
-   right: 0.4rem;
-
-   background-image: url('../images/menu.png');
-   background-color: transparent; /* Cuando usamos background-image se pone el background-color en blanco por default por eso le indicamos que sea transparente para que se pueda ver la imagen. */
-   background-position: top left;
-   background-repeat: no-repeat;
-   background-size: cover;
-
-   border: none;
-
-   transition: background-image ease 0.2s;
-
-}
-
-.boton-movil[data-visible="true"] {
-   background-image: url('../images/menu-abierto.png');
-}
-
 @media screen and (min-width: 780px) {
    :root {
       --globalScale: 1.5;
@@ -272,11 +274,18 @@ footer {
 	 "footer footer";
    }
 
-   aside {
+   nav ul {
       display: flex;
    }
 
-   .boton-movil {
+   aside {
+      display: flex;
+      position: relative;
+      width: 100%;
+      inset: 0;
+   }
+   
+   nav button, aside li a {
       display: none;
    }
    

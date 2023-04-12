@@ -7,6 +7,6 @@
   {{ range .Site.Sections }}
   <li><a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
-  {{ partial "boton.html" . }}
   </ul>
+  <button data-visible="false"></button>
 </nav>

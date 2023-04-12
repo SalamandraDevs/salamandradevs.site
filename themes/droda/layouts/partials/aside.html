@@ -5,4 +5,7 @@
     {{ .Pre }}<a href="{{ .URL }}" title="{{ .Identifier }}" target="_blank">{{ .Name }}</a>
   </div>
   {{ end }}
+  {{ range .Site.Sections }}
+    <li class="item"><a class="hover" href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
 </aside>
