@@ -22,6 +22,7 @@
    --bgColorMidDark: #353b43;
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
+   --bgColorBlue: #007fce;
    --globalScale: 1;
    
 }
@@ -78,17 +79,28 @@ body {
    height: 100%;
 }
 
+::-webkit-scrollbar {
+   width: 0.35rem;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--bgColorBlue);
+}
+
 aside {
-   position: absolute;
-   inset: 0 50%;
+   position: fixed;
+   inset: 0 65%;
    grid-area: aside;
    display: none;
    flex-flow: column nowrap;
    align-items: flex-start;
    justify-content: flex-start;
-   width: 50%;
-   padding: 0 1rem;
+   width: 35%;
+   height: 80%;
+   margin-top: 5rem;
+   padding: 2rem 1rem;
    background-color: var(--bgColorDark);
+   overflow: auto;
 }
 
 aside .item {
@@ -267,7 +279,7 @@ footer {
    }
 
    body {
-      grid-template-columns: 11rem 1fr;
+      grid-template-columns: 13rem 1fr;
       grid-template-areas: /* Tabletas se muestra el aside */
 	 "navbar navbar"
 	 "aside main"
@@ -282,7 +294,10 @@ footer {
       display: flex;
       position: relative;
       width: 100%;
+      height: 100%;
+      margin-top: 0;
       inset: 0;
+      overflow-x: hidden;
    }
    
    nav button, aside li a {
