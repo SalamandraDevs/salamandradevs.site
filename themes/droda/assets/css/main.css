@@ -151,7 +151,7 @@ nav ul {
    overflow: hidden;
 }
 
-.hover {
+.nav-items {
    padding-bottom: .15em;
    background: var(--navLinkColor), var(--navLinkColor);
    background-size: .3em .1em;
@@ -160,7 +160,7 @@ nav ul {
    transition: .3s linear, background-size .3s .2s linear;
 }
 
-.hover:hover {
+.nav-items:hover {
    background-size: 50% .1em;
    background-position: 10% 100%, 90% 100%;
 }
