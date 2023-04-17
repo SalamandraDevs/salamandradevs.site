@@ -22,6 +22,8 @@
    --bgColorMidDark: #353b43;
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
+   --bgColorBlue: #1b6694;
+   --bgColorSalamandra: rgb(236, 162, 143);
    --globalScale: 1;
    
 }
@@ -57,6 +59,7 @@ a:hover,
 a:active {
    text-decoration: none;
    font-size: 1.5rem;
+   color: var(--bgColorSalamandra);
 }
 
 html {
@@ -78,20 +81,34 @@ body {
    height: 100%;
 }
 
+::-webkit-scrollbar {
+   width: 0.35rem;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--bgColorBlue);
+}
+
 aside {
+   position: fixed;
+   inset: 0 calc(100% - 18rem);
    grid-area: aside;
    display: none;
    flex-flow: column nowrap;
    align-items: flex-start;
    justify-content: flex-start;
-   width: 100%;
-   padding: 0 1rem;
+   width: 18rem;
+   height: calc(100% - 5rem);
+   margin-top: 5rem;
+   padding: 2rem 1rem;
    background-color: var(--bgColorDark);
+   overflow: auto;
 }
 
 aside .item {
+   color: var(--bgColorLight);
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: column nowrap;
    align-items: center;
    justify-content: space-between;
    font-size: 1.5rem;
@@ -122,7 +139,7 @@ nav div img:first-child {
 }
 
 nav ul {
-   display: flex;
+   display: none;
    flex-flow: row nowrap;
    align-items: center;
    justify-content: flex-end;
@@ -163,6 +180,30 @@ nav a {
    padding: 1rem 1.5rem;
    text-decoration: none;
  }
+
+nav button {
+   display: flex;
+   position: absolute;
+   width: 4rem;
+   height: 4rem;
+   right: 0.4rem;
+
+   background-image: url('../images/menu.png');
+   background-color: transparent; /* Cuando usamos background-image se pone el background-color en blanco por default por eso le indicamos que sea transparente para que se pueda ver la imagen. */
+   background-position: top left;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   border: none;
+   cursor: pointer;
+
+   transition: background-image ease 0.2s;
+
+}
+
+nav button[data-visible="true"] {
+   background-image: url('../images/menu-abierto.png');
+} 
 
 main {
    grid-area: main;
@@ -242,16 +283,25 @@ footer {
    }
 
    body {
-      grid-template-columns: 11rem 1fr;
+      grid-template-columns: 13rem 1fr;
       grid-template-areas: /* Tabletas se muestra el aside */
 	 "navbar navbar"
-	 "aside main"
+	 "main main"
 	 "footer footer";
    }
 
-   aside {
+   nav ul {
       display: flex;
    }
+
+   aside {
+      display: none;
+   }
+   
+   nav button, aside li a {
+      display: none;
+   }
+   
 }
 
 @media screen and (min-width: 1280px) {
