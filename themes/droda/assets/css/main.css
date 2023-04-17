@@ -22,7 +22,8 @@
    --bgColorMidDark: #353b43;
    --bgColorLightDark: #4f5864;
    --bgColorLight: #D2D2D2;
-   --bgColorBlue: #007fce;
+   --bgColorBlue: #1b6694;
+   --bgColorSalamandra: rgb(236, 162, 143);
    --globalScale: 1;
    
 }
@@ -58,6 +59,7 @@ a:hover,
 a:active {
    text-decoration: none;
    font-size: 1.5rem;
+   color: var(--bgColorSalamandra);
 }
 
 html {
@@ -89,14 +91,14 @@ body {
 
 aside {
    position: fixed;
-   inset: 0 65%;
+   inset: 0 calc(100% - 18rem);
    grid-area: aside;
    display: none;
    flex-flow: column nowrap;
    align-items: flex-start;
    justify-content: flex-start;
-   width: 35%;
-   height: 80%;
+   width: 18rem;
+   height: calc(100% - 5rem);
    margin-top: 5rem;
    padding: 2rem 1rem;
    background-color: var(--bgColorDark);
@@ -104,6 +106,7 @@ aside {
 }
 
 aside .item {
+   color: var(--bgColorLight);
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
@@ -192,6 +195,7 @@ nav button {
    background-size: cover;
 
    border: none;
+   cursor: pointer;
 
    transition: background-image ease 0.2s;
 
@@ -282,7 +286,7 @@ footer {
       grid-template-columns: 13rem 1fr;
       grid-template-areas: /* Tabletas se muestra el aside */
 	 "navbar navbar"
-	 "aside main"
+	 "main main"
 	 "footer footer";
    }
 
@@ -291,13 +295,7 @@ footer {
    }
 
    aside {
-      display: flex;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      margin-top: 0;
-      inset: 0;
-      overflow-x: hidden;
+      display: none;
    }
    
    nav button, aside li a {
