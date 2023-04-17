@@ -293,7 +293,7 @@ footer {
    }
 
    aside {
-      display: none;
+      display: none !important;
    }
    
    nav button, aside li a {
