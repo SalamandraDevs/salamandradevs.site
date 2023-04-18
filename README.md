@@ -41,4 +41,4 @@ Este sitio está publicado en la CDN de Netlify
 
 # Lista de Tareas
 
-Si este proyecto te interesa, aquí hay una lista de tareas de la cual puedes escoger una de las siguientes tareas en [nuestra Lista de Tareas](TODO.md)
+Si este proyecto te interesa, visita nuestro TODO para escoger una de las siguientes [tareas](TODO.md). No olvides entrar al canal de Telegram para discutir tus aportes.
