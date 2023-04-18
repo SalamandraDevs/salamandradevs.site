@@ -1,4 +1,4 @@
-# Tareas Pendientes
+# Tareas
 
 - [ ] Hacer el fondo con base en mockup con svg en algún software de edición de imágenes (Inkscape, Krita, Gimp, etc)
 - [ ] Trasladar los enlaces que hay en el aside para dentro del main cuando se muestra el
