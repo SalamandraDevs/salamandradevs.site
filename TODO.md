@@ -11,4 +11,4 @@
 - [ ] Crear los @fontface para los tipos de fuente que hay dentro de `themes/droda/static/fonts` y aplicarlos
 a todo el sitio respetando los estilos bold para los títulos y los estilos normales para el texto.
 Además, escoger un color claro para las fuentes.
-- [ ] Ajustar la vista de tarjetas en blog y Acerca de basándonos en el mockup en la vista de escritorio.
+- [ ] Ajustar la vista de tarjetas en "Blog" y "Acerca de" basándonos en el mockup en la vista de escritorio.
