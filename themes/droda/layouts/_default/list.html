@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <div class="articles">
+  <div>
     {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) }}
     {{ range $paginator.Pages }}
     {{ .Render "article" }}

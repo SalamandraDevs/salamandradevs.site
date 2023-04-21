@@ -19,8 +19,8 @@
 
 :root {
    --bgColorDark: #0e0e0e;
-   --bgColorMidDark: #353b43;
-   --bgColorLightDark: #4f5864;
+   --bgColorMidDark: #292e35;
+   --bgColorLightDark: #373d46;
    --bgColorLight: #D2D2D2;
    --bgColorBlue: #1b6694;
    --bgColorSalamandra: rgb(236, 162, 143);
@@ -212,6 +212,7 @@ main {
    background-position-x: right;
    background-position-y: bottom;
    background-repeat: no-repeat;
+   overflow-y: auto;
 }
 
 /* Regla que aplica solo a firefox */
@@ -227,19 +228,39 @@ main hr {
    width: 100%;
 }
 
-.articles {
+main div {
    display: flex;
    flex-flow: row wrap;
    align-items: flex-start;
    justify-content: space-between;
 }
 
-.articles article {
-   width: 30rem;
-   border: 1px solid;
-   border-radius: 0.5rem;
-   padding: 1rem;
+main div > article {
+   display: inline-block;
+   width: calc(50% - 2rem);
    margin: 1rem;
+   border-radius: 0.5rem;
+
+   max-height: 20rem;
+   min-height: 20rem;
+
+   background-color: var(--bgColorLightDark);
+   box-shadow: 0 4px 1px 0.2px var(--bgColorDark);
+
+   overflow-y: auto;
+}
+
+main div > article img {
+   width: 100%;
+   min-height: 12rem;
+   max-height: 12rem;
+   background-color: var(--bgColorLight);
+}
+
+main div > article span {
+   padding: 0 1rem;
+   word-break: break-all;
+   display: block;
 }
 
 .content table {
