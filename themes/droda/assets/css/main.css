@@ -269,20 +269,20 @@ main div > article span {
    display: block;
 }
 
-.content table {
+main span table {
    padding-top: 2rem;
    margin: 0 auto;
 }
 
-.content table img {
+main span table img {
    width: 3rem;
 }
 
-.content table td {
+main span table td {
    padding: 0 0.3rem;
 }
 
-.content .highlight code {
+main span .highlight code {
    white-space: pre-wrap;
    overflow-x: auto;
 }
