@@ -1,6 +1,5 @@
 ---
 title: SNAKE GAME
-description: Juego hecho colaborativamente
+description: Juego de la viborita con disparos, hecho por @VladImpaler64
+image: /images/games/pato.svg
 ---
-
-Juego de snake hecho por @VladImpaler64
