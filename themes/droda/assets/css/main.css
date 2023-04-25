@@ -287,6 +287,14 @@ main span .highlight code {
    overflow-x: auto;
 }
 
+main iframe {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+   max-width: 100vh;
+}
+
 footer {
    grid-area: footer;
    display: flex;
