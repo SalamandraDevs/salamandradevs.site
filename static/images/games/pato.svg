@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0%" y="0%"
+	width="100%" height="100%"
+	viewBox="0 0 64.0 64.0"
+	enable-background="new 0 0 64.0 64.0"
+	xml:space="preserve">
+<defs>
+	<linearGradient id="fillGrad0" x1="0.000%" y1="50.000%" x2="100.000%" y2="50.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(204,122,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(122,73,0);stop-opacity:1.000" />
+	</linearGradient>
+
+	<radialGradient id="fillGrad11" cx="20.213%" cy="49.154%" fx="20.213%" fy="49.154%" r="54.863%">
+   		<stop offset="0.000%" style="stop-color:rgb(6,49,0);stop-opacity:1.000" />
+		<stop offset="63.876%" style="stop-color:rgb(255,250,221);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(224,185,0);stop-opacity:1.000" />
+	</radialGradient>
+
+	<linearGradient id="fillGrad12" x1="50.000%" y1="42.308%" x2="50.000%" y2="88.462%">
+   		<stop offset="0.000%" style="stop-color:rgb(84,45,0);stop-opacity:1.000" />
+		<stop offset="58.621%" style="stop-color:rgb(177,110,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(192,150,0);stop-opacity:1.000" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad15" x1="35.457%" y1="76.350%" x2="42.670%" y2="15.270%">
+   		<stop offset="0.000%" style="stop-color:rgb(150,102,0);stop-opacity:1.000" />
+		<stop offset="62.642%" style="stop-color:rgb(255,236,212);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(255,254,253);stop-opacity:1.000" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad16" x1="36.098%" y1="53.460%" x2="72.987%" y2="75.228%">
+   		<stop offset="0.000%" style="stop-color:rgb(255,210,97);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(237,141,0);stop-opacity:1.000" />
+	</linearGradient>
+
+	<radialGradient id="fillGrad19" cx="20.755%" cy="3.192%" fx="20.755%" fy="3.192%" r="68.726%">
+   		<stop offset="0.000%" style="stop-color:rgb(166,255,111);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(33,63,0);stop-opacity:1.000" />
+	</radialGradient>
+
+	<linearGradient id="fillGrad20" x1="65.756%" y1="45.405%" x2="34.034%" y2="41.765%">
+   		<stop offset="0.000%" style="stop-color:rgb(90,86,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(76,26,0);stop-opacity:1.000" />
+	</linearGradient>
+
+<filter id="glow20" x="-200%" y="-200%" width="600%" height="600%" >
+	<feOffset result="offOut" in="SourceGraphic" dx="0.09601528" dy="0.0" />
+	<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.06000955" />
+	<feFlood flood-color="#007315" flood-opacity="0.902" result="flood"/>
+	<feComposite in="flood" in2="blurOut" operator="in" result="blendOut0"/>
+	<feBlend in="blendOut0" in2="blendOut0" result="blendOut1" mode="normal" />
+	<feBlend in="blendOut1" in2="blendOut0" result="blendOut2" mode="normal" />
+	<feBlend in="blendOut2" in2="blendOut0" result="blendOut3" mode="normal" />
+	<feBlend in="blendOut3" in2="blendOut0" result="blendOut4" mode="normal" />
+	<feBlend in="blendOut4" in2="blendOut0" result="blendOut5" mode="normal" />
+	<feBlend in="blendOut5" in2="blendOut0" result="blendOut6" mode="normal" />
+	<feBlend in="blendOut6" in2="blendOut0" result="blendOut7" mode="normal" />
+	<feBlend in="blendOut7" in2="blendOut0" result="blendOut8" mode="normal" />
+	<feBlend in="SourceGraphic" in2="blendOut8" mode="normal" />
+</filter>
+
+	<radialGradient id="fillGrad21" cx="26.137%" cy="13.083%" fx="26.137%" fy="13.083%" r="74.887%">
+   		<stop offset="0.000%" style="stop-color:rgb(248,199,0);stop-opacity:0.796" />
+		<stop offset="100.000%" style="stop-color:rgb(84,47,0);stop-opacity:1.000" />
+	</radialGradient>
+
+<filter id="glow21" x="-200%" y="-200%" width="600%" height="600%" >
+	<feOffset result="offOut" in="SourceGraphic" dx="0.09227241" dy="0.03075747" />
+	<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.0076893675" />
+	<feFlood flood-color="#594100" flood-opacity="0.741" result="flood"/>
+	<feComposite in="flood" in2="blurOut" operator="in" result="blendOut0"/>
+	<feBlend in="blendOut0" in2="blendOut0" result="blendOut1" mode="normal" />
+	<feBlend in="SourceGraphic" in2="blendOut1" mode="normal" />
+</filter>
+
+	<linearGradient id="fillGrad22" x1="0.000%" y1="50.000%" x2="100.000%" y2="50.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(48,127,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(43,50,0);stop-opacity:1.000" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad23" x1="32.529%" y1="59.084%" x2="111.590%" y2="16.041%">
+   		<stop offset="0.000%" style="stop-color:rgb(236,130,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(30,13,0);stop-opacity:1.000" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad24" x1="54.417%" y1="56.958%" x2="49.470%" y2="15.907%">
+   		<stop offset="0.000%" style="stop-color:rgb(255,250,234);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(140,87,0);stop-opacity:1.000" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad106" x1="31.579%" y1="21.576%" x2="36.842%" y2="81.902%">
+   		<stop offset="0.000%" style="stop-color:rgb(167,143,0);stop-opacity:0.275" />
+		<stop offset="47.212%" style="stop-color:rgb(255,232,199);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(158,84,0);stop-opacity:0.808" />
+	</linearGradient>
+
+	<linearGradient id="fillGrad107" x1="64.144%" y1="50.355%" x2="23.418%" y2="72.735%">
+   		<stop offset="0.000%" style="stop-color:rgb(64,128,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(255,250,217);stop-opacity:1.000" />
+	</linearGradient>
+
+</defs>
+	<path
+		transform = "rotate(-0.00 14.05 23.08)"
+		fill="url(#fillGrad0)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.3247997"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M5.68,21.97C6.44,23.32,7.20,24.67,10.70,24.49C14.20,24.31,20.43,22.60,22.00,21.97C23.57,21.34,20.48,21.79,16.98,21.97C13.48,22.15,9.58,22.06,5.68,21.97z"/>
+	<path
+		fill="#FFEFB7"
+		stroke="#4C2F00"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.45806697"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M61.22,44.14L53.82,44.75L54.23,39.25L60.29,40.68Q63.52,42.71,61.22,44.14z"/>
+	<path
+		fill="#B9A100"
+		stroke="#4C2F00"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.29333276"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M53.65,44.50L61.25,44.00L53.88,42.84"/>
+	<path
+		transform = "rotate(-265.19 26.54 30.00)"
+		fill="url(#fillGrad11)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.25682724"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M19.57,39.14C22.16,37.61,24.74,36.08,27.25,38.50C29.77,40.92,32.21,47.30,33.10,42.43C33.99,37.55,33.33,21.43,32.08,17.11C30.83,12.78,29.01,20.25,27.00,23.48C24.98,26.72,22.77,25.71,20.57,24.70"/>
+	<path
+		transform = "rotate(-0.00 30.11 55.50)"
+		fill="url(#fillGrad12)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.256"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M23.00,47.00L37.22,47.00L37.22,64.00L23.00,64.00z"/>
+	<path
+		transform = "rotate(-0.00 31.36 41.99)"
+		fill="url(#fillGrad15)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.37145984"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M16.09,35.25A4.42 4.45 190.10 0 1 20.87,33.05C20.35,31.37,19.83,29.69,17.57,30.00C15.31,30.31,11.31,32.60,9.30,36.84C7.29,41.08,7.26,47.26,11.66,50.53C16.06,53.81,24.89,54.18,32.92,53.95C40.94,53.72,48.17,52.89,51.81,49.39C55.45,45.90,55.50,39.75,52.99,35.70C50.48,31.66,45.40,29.72,38.82,30.00C32.24,30.27,24.17,32.76,16.09,35.25z"/>
+	<path
+		transform = "rotate(-0.00 12.76 18.51)"
+		fill="url(#fillGrad16)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.29604602"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M5.22,20.00C5.17,20.88,5.13,21.75,8.10,22.88C11.06,24.02,17.05,25.41,19.22,23.00C21.39,20.59,19.76,14.37,19.22,13.00C18.68,11.63,19.24,15.11,17.22,17.00C15.20,18.90,10.62,19.21,8.19,19.45C5.76,19.68,5.49,19.84,5.22,20.00z"/>
+	<path
+		transform = "rotate(-0.00 27.08 18.49)"
+		fill="url(#fillGrad19)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.31519932"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M34.00,22.00C32.69,25.13,31.39,28.26,29.00,29.00C26.61,29.74,23.15,28.08,21.16,26.40C19.16,24.73,18.64,23.03,18.12,21.34C17.97,17.44,17.83,13.54,20.00,11.00C22.17,8.46,26.66,7.28,30.00,8.00C33.34,8.72,35.53,11.35,36.00,14.00C36.47,16.65,35.24,19.33,34.00,22.00z"/>
+	<path
+		transform = "rotate(-100.97 22.53 14.95)"
+		fill="url(#fillGrad20)"
+		stroke="#BABF00"
+		fill-opacity="1.0"
+		stroke-opacity="0.671"
+		fill-rule="nonzero"
+		stroke-width="0.056699134"
+		filter="url(#glow20)"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M22.22,16.55C21.96,16.09,21.70,15.63,21.64,15.11C21.59,14.60,21.75,14.02,22.01,13.68C22.27,13.35,22.62,13.26,22.92,13.43C23.22,13.59,23.45,14.02,23.43,14.41C23.41,14.79,23.13,15.14,22.88,15.49C22.64,15.84,22.43,16.19,22.22,16.55z"/>
+	<path
+		transform = "rotate(-0.00 22.00 15.01)"
+		fill="url(#fillGrad21)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		filter="url(#glow21)"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M22.00,14.23C22.42,14.23,22.76,14.58,22.76,15.01C22.76,15.44,22.42,15.79,22.00,15.79C21.58,15.79,21.24,15.44,21.24,15.01C21.24,14.58,21.58,14.23,22.00,14.23z"/>
+	<path
+		transform = "rotate(-0.00 18.92 21.22)"
+		fill="url(#fillGrad22)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.256"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M20.22,25.59C19.33,24.70,18.44,23.81,18.00,23.00C17.56,22.19,17.58,21.45,17.67,20.67C17.76,19.88,17.92,19.05,18.00,18.67C18.08,18.28,18.07,18.34,18.08,18.11C18.09,17.88,18.11,17.36,18.14,16.84"/>
+	<path
+		transform = "rotate(-340.81 16.22 19.00)"
+		fill="url(#fillGrad23)"
+		stroke="#5E3A00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.192"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M16.22,18.62C16.55,18.62,16.82,18.79,16.82,19.00C16.82,19.21,16.55,19.38,16.22,19.38C15.89,19.38,15.62,19.21,15.62,19.00C15.62,18.79,15.89,18.62,16.22,18.62z"/>
+	<path
+		transform = "rotate(-176.23 38.08 42.15)"
+		fill="url(#fillGrad24)"
+		stroke="#5E3A00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M25.72,46.57C23.07,44.33,20.42,42.09,25.20,38.72C29.98,35.35,42.19,30.85,48.46,32.68C54.72,34.52,55.06,42.69,50.54,47.19C46.02,51.69,36.64,52.52,31.70,51.81C26.75,51.10,26.24,48.83,25.72,46.57z"/>
+	<path
+		fill="#854900"
+		stroke="#5E3A00"
+		fill-opacity="0.180"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M27.27,35.49L29.20,37.09L26.76,37.68L28.70,39.28L26.25,39.86L28.19,41.47L25.74,42.05L27.68,43.66L25.23,44.24L27.17,45.85L24.73,46.43L26.66,48.04L24.22,48.62"/>
+	<path
+		fill="#854900"
+		stroke="#5E3A00"
+		fill-opacity="0.180"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M34.31,33.11L36.50,34.34L34.20,35.35L36.39,36.58L34.09,37.60L36.28,38.83L33.98,39.84"/>
+	<path
+		fill="#854900"
+		stroke="#5E3A00"
+		fill-opacity="0.180"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M38.41,33.44L40.54,34.78L38.19,35.67L40.32,37.01L37.97,37.91L40.10,39.25L37.75,40.15"/>
+	<path
+		fill="#854900"
+		stroke="#5E3A00"
+		fill-opacity="0.180"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M45.20,35.16L47.31,36.53L44.95,37.39L47.06,38.76L44.70,39.63L46.81,40.99L44.45,41.86"/>
+	<path
+		fill="#854900"
+		stroke="#5E3A00"
+		fill-opacity="0.180"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M41.68,34.21L43.84,35.49L41.53,36.46L43.69,37.73L41.37,38.70L43.54,39.97L41.22,40.94"/>
+	<path
+		transform = "rotate(-0.00 37.51 41.45)"
+		fill="url(#fillGrad106)"
+		stroke="#5E3A00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M27.96,47.77Q35.83,52.26,47.07,43.27Q36.97,38.57,30.48,40.35L32.82,39.43L30.68,38.11L33.01,37.19L30.87,35.87L33.21,34.95L31.07,33.63"/>
+	<path
+		transform = "rotate(-0.00 25.00 26.90)"
+		fill="url(#fillGrad107)"
+		stroke="#4C2F00"
+		fill-opacity="1.0"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.32"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M19.13,24.75C19.24,25.97,19.36,27.19,21.00,28.00C22.64,28.81,25.81,29.22,28.00,29.00C30.19,28.78,31.40,27.94,30.67,27.67C29.93,27.39,27.25,27.69,25.00,27.30C22.75,26.91,20.94,25.83,19.13,24.75z"/>
+	<path
+		fill="#211400"
+		stroke="#694100"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.08146739"
+		stroke-linejoin="round"
+		stroke-linecap="round"
+		d="M22.00,14.69C22.17,14.69,22.30,14.83,22.30,15.01C22.30,15.18,22.17,15.32,22.00,15.32C21.83,15.32,21.70,15.18,21.70,15.01C21.70,14.83,21.83,14.69,22.00,14.69z"/>
+</svg>

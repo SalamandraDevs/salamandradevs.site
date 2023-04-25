@@ -19,8 +19,8 @@
 
 :root {
    --bgColorDark: #0e0e0e;
-   --bgColorMidDark: #353b43;
-   --bgColorLightDark: #4f5864;
+   --bgColorMidDark: #292e35;
+   --bgColorLightDark: #373d46;
    --bgColorLight: #D2D2D2;
    --bgColorBlue: #1b6694;
    --bgColorSalamandra: rgb(236, 162, 143);
@@ -185,6 +185,7 @@ nav button {
    width: 4rem;
    height: 4rem;
    right: 0.4rem;
+   border-radius: 20px;
 
    background-image: url('../images/menu.png');
    background-color: transparent; /* Cuando usamos background-image se pone el background-color en blanco por default por eso le indicamos que sea transparente para que se pueda ver la imagen. */
@@ -194,9 +195,11 @@ nav button {
 
    border: none;
    cursor: pointer;
+   user-select: none;
+}
 
-   transition: background-image ease 0.2s;
-
+nav button:hover{
+   background-color: var(--bgColorMidDark);
 }
 
 nav button[data-visible="true"] {
@@ -212,6 +215,7 @@ main {
    background-position-x: right;
    background-position-y: bottom;
    background-repeat: no-repeat;
+   overflow-y: auto;
 }
 
 /* Regla que aplica solo a firefox */
@@ -227,37 +231,68 @@ main hr {
    width: 100%;
 }
 
-.articles {
+main div {
    display: flex;
    flex-flow: row wrap;
-   align-items: flex-start;
+   align-items: center;
    justify-content: space-between;
+   color: var(--bgColorLight);
 }
 
-.articles article {
-   width: 30rem;
-   border: 1px solid;
-   border-radius: 0.5rem;
-   padding: 1rem;
+main div > article {
+   display: inline-block;
+   width: calc(50% - 2rem);
    margin: 1rem;
+   border-radius: 0.5rem;
+
+   max-height: 25rem;
+   min-height: 25rem;
+   min-width: 20rem;
+
+   background-color: var(--bgColorLightDark);
+   box-shadow: 0 4px 1px 0.2px var(--bgColorDark);
+
+   overflow-y: auto;
 }
 
-.content table {
+main div > article img {
+   display: block;
+   margin: 1rem auto;
+   min-height: 12rem;
+   max-height: 12rem;
+}
+
+main div > article span {
+   padding: 0 1rem;
+   word-break: normal;
+   overflow-wrap: break-word;
+   display: block;
+}
+
+main span table {
    padding-top: 2rem;
    margin: 0 auto;
 }
 
-.content table img {
+main span table img {
    width: 3rem;
 }
 
-.content table td {
+main span table td {
    padding: 0 0.3rem;
 }
 
-.content .highlight code {
+main span .highlight code {
    white-space: pre-wrap;
    overflow-x: auto;
+}
+
+main iframe {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+   max-width: 100vh;
 }
 
 footer {
@@ -275,7 +310,16 @@ footer {
    margin: 0 auto;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 480px) {
+   body {
+      min-width: 25rem;
+   }
+   main div > article {
+      min-width: calc(100% - 2rem);
+   }
+}
+
+@media screen and (min-width: 840px) {
    :root {
       --globalScale: 1.5;
    }
@@ -299,12 +343,39 @@ footer {
    nav button, aside li a {
       display: none;
    }
+
+   main div {
+      justify-content: space-evenly;
+   }
+
+   main div > article {
+      max-width: 30rem;
+   }
    
 }
 
 @media screen and (min-width: 1280px) {
    :root {
       --globalScale: 2;
+   }
+
+   main div > article img {
+      min-height: 5rem;
+      max-height: 5rem;
+   }
+   
+
+   main div article {
+      width: calc(30% - 2rem);
+   
+      max-height: 15rem;
+      min-height: 15rem;
+      min-width: 10rem;
+
+   }
+
+   main div article p, a{
+      font-size: 1rem;
    }
 }
 
