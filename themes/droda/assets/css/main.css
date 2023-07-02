@@ -74,7 +74,7 @@ body {
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 5rem 1fr 5rem;
-   grid-template-areas: /* No mostramos el aside en móbiles */
+   grid-template-areas: /* No mostramos el aside en móviles */
       "navbar"
       "main"
       "footer";
@@ -308,6 +308,15 @@ footer {
    width: 80%;
    height: 80%;
    margin: 0 auto;
+}
+
+.index {
+   background-color: #242424;
+   background-image: url('../images/salamandra_margin.svg');
+   background-position-x: center;
+   background-position-y: 2rem;
+   background-repeat: no-repeat;
+   background-size: 10rem;
 }
 
 @media screen and (max-width: 480px) {
