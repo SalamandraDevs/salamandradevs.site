@@ -210,8 +210,10 @@ nav button[data-visible="true"] {
 
 main {
    grid-area: main;
-   padding: 2rem;
+   padding: 0;
+   margin: 0;
    background-color: var(--bgColorMidDark);
+   background-image: url('../images/salamandra.svg');
 }
 
 /* Regla que aplica solo a firefox */
@@ -233,6 +235,11 @@ main div {
    align-items: center;
    justify-content: space-between;
    color: var(--bgColorLight);
+   backdrop-filter: blur(8px);
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
 }
 
 main div > article {
@@ -309,6 +316,7 @@ footer {
 .greetings img {
    width: 8rem;
    margin: 0 auto;
+   filter: drop-shadow(0 0 0.75rem rgb(236, 162, 143))
 }
 
 .greetings p {
