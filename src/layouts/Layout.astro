@@ -1,0 +1,39 @@
+
+---
+import '../styles/global.css';
+
+/* define los tipos */
+export interface Props {
+	titulo: string;
+	descripcion?: string
+}
+
+const {
+	titulo,
+	descripcion = "Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain."
+} = Astro.props;
+---  
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{titulo}</title>
+		
+	</head>
+	<body class="bg-[#0A0A0A]">
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
