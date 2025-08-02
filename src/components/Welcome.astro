@@ -2,13 +2,12 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import Matrix from '../components/Matrix.astro'
+import salamandra from '../assets/salamandra.svg';
 ---
 
-<div id="container">
-	
+<div id="container" class="relative">
 	<main>
 		<section id="hero" class="mx-4 md:max-w-5xl w-full text-slate-50 py-10 my-auto border-white md:gap-10">
-			
 			<div class="flex flex-col md:flex-row w-full items-start md:items-center justify-between gap-5 md:gap-0">
 				<div class="inline-flex gap-3 items-center">
 					<img src="/icon.png" class="w-10 h-10" alt="Logo" />
@@ -46,6 +45,22 @@ import Matrix from '../components/Matrix.astro'
 
 
 <style>
+	#container > img {
+		animation: sala 4s reverse linear infinite;
+	}
+
+	@keyframes sala {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
 	#background {
 		position: fixed;
 		top: 0;
