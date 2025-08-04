@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ "<!-- Layout para el acerca de ... -->" | safeHTML }}
+<main>
+  <h2>{{ .Title }}</h2>
+  <span>
+    {{ .Content }}
+  </span>
+</main>
+{{ end }}

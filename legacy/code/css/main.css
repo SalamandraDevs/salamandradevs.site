@@ -1,0 +1,396 @@
+/* ESTILOS CSS PARA EL SITIO WEB DE SALAMANDRADEVS */
+
+/* Copyright GNU LGPL. 
+   Puedes copiar, modificar y usar este software bajo los términos de la licencia general de uso público reducida de GNU.
+   Encontrarás una copia de la licencia aquí https://www.gnu.org/licenses/lgpl-3.0.html */
+
+/* Metodología mobile first o pantallas pequeñas primero.
+   Primero se escriben las reglas para el ancho de portview
+   más pequeño a considerar */
+
+/* VARIABLES Y REGLAS GENERALES */
+@charset "UTF-8";
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --bgColorDark: #0e0e0e;
+   --bgColorMidDark: #292e35;
+   --bgColorLightDark: #373d46;
+   --bgColorLight: #D2D2D2;
+   --bgColorBlue: #1b6694;
+   --bgColorSalamandra: rgb(236, 162, 143);
+   --backgroundImageSize: 10rem;
+   --globalScale: 1;
+   --navLinkColor: linear-gradient(#1482c8 0 0);
+}
+
+h1 {
+   font-size: 6rem;
+}
+
+h2 {
+   font-size: 4rem;
+}
+
+h3 {
+   font-size: 3rem;
+}
+
+h4 {
+   font-size: 2rem;
+}
+
+p {
+   font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, p {
+   padding: 0.5rem 0;
+   margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+   text-decoration: none;
+   font-size: 1.5rem;
+   color: var(--bgColorSalamandra);
+}
+
+html {
+   font-size: calc(62.5% * var(--globalScale));
+   background-color: var(--bgColorLight);
+   height: 100%;
+}
+
+/* REGLAS DEL HOME */
+
+body {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 5rem 1fr 5rem;
+   grid-template-areas: /* No mostramos el aside en móviles */
+      "navbar"
+      "main"
+      "footer";
+   height: 100%;
+}
+
+::-webkit-scrollbar {
+   width: 0.35rem;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--bgColorBlue);
+}
+
+aside {
+   position: fixed;
+   inset: 0 calc(100% - 18rem);
+   grid-area: aside;
+   display: none;
+   flex-flow: column nowrap;
+   align-items: flex-start;
+   justify-content: flex-start;
+   width: 18rem;
+   height: calc(100% - 5rem);
+   margin-top: 5rem;
+   padding: 2rem 1rem;
+   background-color: var(--bgColorDark);
+   overflow: auto;
+}
+
+aside > div, li {
+   color: var(--bgColorLight);
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1.5rem;
+   width: 100%;
+   padding: 1rem 0;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   grid-area: navbar;
+   background-color: var(--bgColorDark);
+   width: 100%;
+}
+
+nav div:first-child {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   margin-left: 1rem;
+}
+
+nav div img:first-child {
+   width: 3rem;
+}
+
+nav ul {
+   display: none;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: flex-end;
+   list-style-type: none;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+.nav-items {
+   padding-bottom: .15em;
+   background: var(--navLinkColor), var(--navLinkColor);
+   background-size: .3em .1em;
+   background-position:50% 100%;
+   background-repeat: no-repeat;
+   transition: .3s linear, background-size .3s .2s linear;
+}
+
+.nav-items:hover {
+   background-size: 50% .1em;
+   background-position: 10% 100%, 90% 100%;
+}
+
+nav li {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   width: fit-content;
+ }
+ 
+nav a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+ }
+
+nav button {
+   display: flex;
+   position: absolute;
+   width: 4rem;
+   height: 4rem;
+   right: 0.4rem;
+   border-radius: 20px;
+
+   background-image: url('../images/menu.png');
+   background-color: transparent; /* Cuando usamos background-image se pone el background-color en blanco por default por eso le indicamos que sea transparente para que se pueda ver la imagen. */
+   background-position: top left;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   border: none;
+   cursor: pointer;
+   user-select: none;
+}
+
+nav button:hover{
+   background-color: var(--bgColorMidDark);
+}
+
+nav button[data-visible="true"] {
+   background-image: url('../images/menu-abierto.png');
+} 
+
+main {
+   grid-area: main;
+   padding: 2rem;
+   background-color: var(--bgColorMidDark);
+}
+
+/* Regla que aplica solo a firefox */
+@-moz-document url-prefix() {
+   main {
+      background-image: url('../images/salamandra.svg');
+      background-position-x: right 1rem;
+      background-position-y: bottom 1rem;
+   }
+}
+
+main hr {
+   width: 100%;
+}
+
+main div {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+   color: var(--bgColorLight);
+}
+
+main div > article {
+   display: inline-block;
+   width: calc(50% - 2rem);
+   margin: 1rem;
+   border-radius: 0.5rem;
+
+   max-height: 25rem;
+   min-height: 25rem;
+   min-width: 20rem;
+
+   background-color: var(--bgColorLightDark);
+   box-shadow: 0 4px 1px 0.2px var(--bgColorDark);
+
+   overflow-y: auto;
+}
+
+main div > article img {
+   display: block;
+   margin: 1rem auto;
+   min-height: 12rem;
+   max-height: 12rem;
+}
+
+main div > article span {
+   padding: 0 1rem;
+   word-break: normal;
+   overflow-wrap: break-word;
+   display: block;
+}
+
+main span table {
+   padding-top: 2rem;
+   margin: 0 auto;
+}
+
+main span table img {
+   width: 3rem;
+}
+
+main span table td {
+   padding: 0 0.3rem;
+}
+
+main span .highlight code {
+   white-space: pre-wrap;
+   overflow-x: auto;
+}
+
+main iframe {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+   max-width: 100vh;
+}
+
+footer {
+   grid-area: footer;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 0 2rem;
+   background-color: var(--bgColorLightDark);
+}
+
+.greetings {
+   
+   width: 80%;
+   margin: 0 auto;
+}
+
+.greetings img {
+   width: 8rem;
+   margin: 0 auto;
+}
+
+.greetings p {
+   padding-top: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+   body {
+      min-width: 25rem;
+   }
+   main div > article {
+      min-width: calc(100% - 2rem);
+   }
+}
+
+/* Los media query aplican a partir de este temaño hacia arriba.
+   Recordemos que estamos aplicando filosofía de móviles primero */
+@media screen and (min-width: 840px) {
+   :root {
+      --globalScale: 1.5;
+   }
+
+   body {
+      grid-template-columns: 13rem 1fr;
+      grid-template-areas: /* Tabletas se muestra el aside */
+	 "navbar navbar"
+	 "main main"
+	 "footer footer";
+   }
+
+   nav ul {
+      display: flex;
+   }
+
+   aside {
+      display: none !important;
+   }
+   
+   nav button, aside li a {
+      display: none;
+   }
+
+   main div {
+      justify-content: space-evenly;
+   }
+
+   main div > article {
+      max-width: 30rem;
+   }
+
+   .greetings img {
+      width:9rem;
+   }
+   
+}
+
+@media screen and (min-width: 1280px) {
+   :root {
+      --globalScale: 2;
+   }
+
+   main div > article img {
+      min-height: 5rem;
+      max-height: 5rem;
+   }
+   
+
+   main div article {
+      width: calc(30% - 2rem);
+      
+      max-height: 15rem;
+      min-height: 15rem;
+      min-width: 10rem;
+
+   }
+
+   main div article p, a{
+      font-size: 1rem;
+   }
+
+   .greetings img {
+      width:10rem;
+   }
+}
+
