@@ -1,44 +1,154 @@
-# Sitio web de Salamandra Devs
+<div align="center"> 
+    <img src="public/SalamandraH.jpg" alt="Logo" width="600" height="250">
+</div>
 
-Este sitio es un desarrollo comunitario liderado desde Salamandra Devs con el apoyo de su comunidad de Telegram.
+<p align="center">
+  <a href="https://salamandradevs-bracozs.netlify.app/"><img src="https://img.shields.io/badge/Salamandra.web-En Construcción-green?style=for-the-badge&logo=Brave&logoColor=orange"></a>
+  <a><img src="https://img.shields.io/badge/LGPL-2.1-red?style=for-the-badge"></a>
+  <a><img src="https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen?style=for-the-badge&logo=git"></a>
+  <a><img src="https://img.shields.io/badge/Stack-Astro | Tailwdind | JavaScript-black?style=for-the-badge&logo=visualstudiocode"></a>
+</p>
 
-## Contribuir
+---
 
-Puedes ayudar a la construcción del sitio con tus contribuciones mientras vas aprendiendo. 
+## Índice
+- [🌐 ¿Quiénes somos?](#-quiénes-somos)
+- [🚀 Tecnologías que amamos](#-tecnologías-que-amamos)
+- [💬 ¿Dónde estamos?](#-dónde-estamos)
+- [🌌 Únete al fuego del conocimiento](#-únete-al-fuego-del-conocimiento)
+- [🤝 ¿Cómo contribuir?](#-cómo-contribuir)
 
-Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuenta de GitHub, luego lo clonas en tu equipo local, creas una nueva rama con un nombre alusivo al cambio que desees hacer, como por ejemplo _"cambio-color"_ o _"nuevo-botón"_ y te cambias a ella (`git checkout -b nuevo-boton`), realizas los cambios que desees y luego haces push a tu repositorio remoto (`git push origin nuevo-boton`). Esto te permitirá crear él `pull-request` en GitHub, con el que tu cambio será analizado por el equipo e incorporado a la página principal después de discutirlo contigo. 
+---
 
-También, debes ingresar al grupo de Telegram [aquí](https://t.me/salamandradevs), allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experimentado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
+## 🌐 ¿Quiénes somos? 
 
-### Nuestro Mockup
-Gracias al compañero [Phosphorus](https://github.com/Phosphorus-M) que nos ayudó con el mockup. ¡Esto es el diseño base con el que debemos trabajar, no es obligatorio, pero si quieres hacer algo para llegar a esta meta adelante!!
+**Salamandra Devs** es una comunidad inclusiva y colaborativa donde nos unimos por el amor a la tecnología, el aprendizaje constante y el deseo de crecer juntos como desarrolladores, hackers, sysadmins, creadores y visionarios del futuro.
 
-- El Home
+Nos conectamos principalmente por Telegram, pero también estamos presentes en otras plataformas. Compartimos conocimiento, resolvemos dudas, colaboramos en proyectos, y sobre todo... ¡crecemos juntos!
 
-![Mockup del Home](static/images/muckup_home.jpg)
+---
 
-- El Blog
+## 🚀 Tecnologías que amamos
 
-![Mockup del Blog](static/images/muckup_blog.jpg)
+Aquí convergen muchas áreas del mundo tech:
 
-Si quieres comentarnos algo sobre el mockup, lo puedes hacer directamente en figma con este [enlace](https://www.figma.com/file/PmGd5FOrFBuaIYpJZWLJzJ/Salamandra-Devs?node-id=0%3A1&t=s0O5F1VyVbQZKxgw-0).
+- 🛡️ **Ciberseguridad**
+- 🐧 **Linux y DevOps**
+- 🔗 **Blockchain y Web3**
+- 🌐 **Web Development:** TypeScript, Astro, React, PHP, Tailwind
+- 🐍 **Python** | 🦀 **Rust** | 🦫 **Go** | ☕ **Java** | 💛 **JavaScript** | 
+- ☁️ **Azure y Cloud**
+- 🤖 **IA, automatización, bots y más...**
 
-### Cómo correr el sitio
+> Siempre estamos abiertos a nuevas tecnologías y aprendizajes. ¡Lo importante es compartir!
 
-El sitio web está desarrollado en HTML, CSS y Javascript, todo vanilla, pero usando el compilador de sitios web estáticos **Hugo**. La versión 0.72 debería bastar, pero al día de hoy está disponible la versión 110. Intenta seguir estos pasos, no están completamente detallados porque varía de sistema a sistema, pero en general es lo que sigue:
+---
 
-- Instala Hugo desde este [enlace](https://gohugo.io/installation/) para el sistema operativo que uses. En linux será muy fácil usando snap o cualquier otro gestor de paquetes. En Windows y Mac OSX puedes encontrar los binarios [aquí](https://github.com/gohugoio/hugo/releases/) o también puedes usar _Chocolatey_ que es un gestor de paquetes en Windows o _Homebrew_ en Mac OSX.
-- Después de que hayas probado que Hugo esté instalado ejecutando `hugo version` _(si usas VSCode es posible que necesites cerrarlo y volverlo a abrir)_, solo tienes que ir al directorio donde clonaste el sitio y ejecutar `hugo server`, con esto se levantará un servidor web en [http://localhost:1313](http://localhost:1313) y podrás ver el sitio funcionando. Asegúrate también de que estás dentro del directorio raíz del proyecto, en el cual encontrarás un directorio llamado `config\_default`, allí están las configuraciones del sitio.
+## 💬 ¿Dónde estamos?
 
-## Licencia
-El archivo de licencia lo puedes encontrar aquí mismo en el repositorio como [`LICENCE`](https://github.com/SalamandraDevs/salamandradevs/blob/main/LICENSE). Este repositorio está bajo la licencia GPL reducida versión 2.1, que te permite usar todo el código para tu proyecto siempre y cuando conserves la misma licencia; pero también puedes usar este código para tu proyecto de licencia cerrada, siempre y cuando el código se añada como biblioteca y no quede dentro de la porción cerrada de tu software.
+- 📱 **[Telegram](https://t.me/salamandradevs)** – Nuestro punto principal de encuentro.
+- 📱 **[Discord](https://discord.gg/aWbDetts)** – Nuestro punto para reuniones en vivo.
+- 🌍 Comunidad web – *Próximamente*.
 
-## Red
+---
 
-Este sitio está publicado en la CDN de Netlify
+ 🌌 Únete al fuego del conocimiento
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fa212863-f227-4f0d-9260-a24049a95c0e/deploy-status)](https://app.netlify.com/sites/salamandradevs/deploys)
+<p align="center">
+  <a href="https://t.me/salamandradevs">
+    <img src="https://img.shields.io/badge/ÚNETE-A%20SALAMANDRA%20DEVS-blue?style=for-the-badge&logo=telegram&logoColor=white">
+  </a>
+</p>
 
-# Lista de Tareas
+---
 
-Si este proyecto te interesa, visita nuestro TODO para escoger una de las siguientes [tareas](TODO.md). No olvides entrar al canal de Telegram para discutir tus aportes.
+## 🤝 ¿Cómo contribuir?
+
+¡Gracias por tu interés en apoyar este proyecto! Aquí tienes una guía rápida para colaborar de manera efectiva:
+
+
+
+### 1. 🔱 Haz un Fork del repositorio
+
+Haz clic en el botón **[Fork](https://docs.github.com/es/get-started/quickstart/fork-a-repo)** en la parte superior derecha del repositorio para crear una copia en tu cuenta de GitHub.
+
+📸 **Ejemplo visual**:  
+
+![Crear fork](/public/fork.png)
+
+---
+
+### 2. 📥 Clona tu fork en tu máquina local
+
+```bash
+git clone https://github.com/tu-usuario/tu-fork-del-proyecto.git
+cd tu-fork-del-proyecto
+```
+---
+
+### 3. 💻 Instala las dependencias
+Asegurate de tener Node.js instalado en tu máquina. Si no lo tienes, puedes descargarlo desde [https://nodejs.org/es/](https://nodejs.org/es/).
+
+```bash
+npm install
+```
+
+---
+
+### 4. 🚀 Inicia el servidor de desarrollo
+Esto abrirá el proyecto en http://localhost:4321 (o el puerto que se defina). Puedes editar el código y ver los cambios en tiempo real.
+```bash
+npm run dev
+```
+
+---
+
+### 5. 📝 Crea una nueva rama
+Siempre crea ramas nuevas para cada mejora o corrección:
+```bash
+git checkout -b nombre-de-la-rama
+```
+---
+
+### 6. 💾 Agrega y confirma tus cambios
+
+```bash
+git add .
+git commit -m "Agrega mi nueva funcionalidad"
+```
+---
+
+### 7. Sube tus cambios a tu fork
+
+```bash
+git push origin nombre-de-la-rama
+```
+
+---
+
+### 8. Crea un Pull Request
+
+📸 **Ejemplo visual**:  
+
+![Crear pull request](/public/PullRequest.png)
+
+---
+
+### 9. Escribe bien el pull request
+
+- Asegúrate de que el título del pull request sea claro y descriptivo.
+- Asegúrate de que los cambios en el pull request estén relacionados con el issue que estás trabajando.
+- Asegúrate de que los cambios estén bien documentados y que los cambios que agregaste estén documentados.
+- Asegúrate de que los cambios estén bien testeados y que los cambios que agregaste estén testeados.
+
+---
+
+### 10. Espera a que tu pull request sea revisado
+
+Tu pull request puede tardar en ser revisado. Si no es el caso, te avisaremos en la parte inferior de la página de tu pull request.
+
+---
+
+### 11. ¡Gracias por tu contribución!
+
+¡Nos vemos en el futuro!  
