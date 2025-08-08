@@ -6,8 +6,10 @@
   <a href="https://salamandradevs-bracozs.netlify.app/"><img src="https://img.shields.io/badge/Salamandra.web-En Construcción-green?style=for-the-badge&logo=Brave&logoColor=orange"></a>
   <a><img src="https://img.shields.io/badge/LGPL-2.1-red?style=for-the-badge"></a>
   <a><img src="https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen?style=for-the-badge&logo=git"></a>
-  <a><img src="https://img.shields.io/badge/Stack-Astro | Tailwdind | JavaScript-black?style=for-the-badge&logo=visualstudiocode"></a>
+  <a><img src="https://img.shields.io/badge/Stack-Astro | Tailwind | JavaScript | TypeScript-black?style=for-the-badge&logo=visualstudiocode"></a>
 </p>
+
+
 
 ---
 
@@ -35,10 +37,12 @@ Aquí convergen muchas áreas del mundo tech:
 - 🛡️ **Ciberseguridad**
 - 🐧 **Linux y DevOps**
 - 🔗 **Blockchain y Web3**
-- 🌐 **Web Development:** TypeScript, Astro, React, PHP, Tailwind
+- 🌐 **Web Development:** TypeScript, Astro, React, PHP,
+    Tailwind, C#, C++, ruby, SQL, NoSql, 
 - 🐍 **Python** | 🦀 **Rust** | 🦫 **Go** | ☕ **Java** | 💛 **JavaScript** | 
 - ☁️ **Azure y Cloud**
 - 🤖 **IA, automatización, bots y más...**
+- 📚 **edtior de codigo:** VSCode, Sublime Text, Atom, Vim, Emacs, Notepad ++
 
 > Siempre estamos abiertos a nuevas tecnologías y aprendizajes. ¡Lo importante es compartir!
 
@@ -103,7 +107,9 @@ npm run dev
 
 ---
 
-### 5. 📝 Crea una nueva rama
+> ⚠️ **Importante:** Es recomendado crear una nueva rama para cada mejora o corrección.
+
+### 5. 📝 Crea una nueva rama 
 Siempre crea ramas nuevas para cada mejora o corrección:
 ```bash
 git checkout -b nombre-de-la-rama
