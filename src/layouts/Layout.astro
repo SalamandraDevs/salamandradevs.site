@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+
+/* define los tipos */
+export interface Props {
+	titulo: string;
+	descripcion?: string
+}
+
+const {
+	titulo,
+	descripcion = "Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain."
+} = Astro.props;
+---  
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="icon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{titulo}</title>
+		
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		background: linear-gradient(-45deg, #0f172a, #0e7490, #0f172a, #1e3a8a);
+		background-size: 400% 400%;
+		animation: cambioFondo 15s ease-in-out infinite;
+	}
+
+	@keyframes cambioFondo {
+		0% {
+			background-position: 0% 50%;
+		}
+		25% {
+			background-position: 50% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		75% {
+			background-position: 50% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+</style>
