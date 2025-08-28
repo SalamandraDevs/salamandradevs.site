@@ -1,0 +1,36 @@
+---
+import SearchIcon from "./Icon/SearchIcon.astro";
+---
+
+<form role="search" class="relative left-4">
+  <input
+    type="search"
+    placeholder="Buscar..."
+    class="outline-none rounded-full p-2 pl-7 focus:ring-2 focus:ring-sal-500 focus:border-transparent transition-all duration-200 [&::-webkit-search-cancel-button]:hidden w-0.5 placeholder:shown:w-0.5 focus:w-36"
+    id="search-input"
+  />
+  <span
+    class="absolute inset-y-0 right-2 flex items-center pointer-events-none"
+  >
+    <SearchIcon className="h-6 text-shadow-gray-100" />
+  </span>
+
+  <!-- <script>
+  const searchInput = document.getElementById(
+    "search-input"
+  ) as HTMLInputElement;
+
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      const target = e.target as HTMLInputElement;
+      const searchTerm = target.value;
+
+      // Aquí puedes agregar tu lógica de búsqueda
+      console.log("Buscando:", searchTerm);
+
+      // Ejemplo: búsqueda en tiempo real
+      // performSearch(searchTerm);
+    });
+  }
+</script> -->
+</form>
