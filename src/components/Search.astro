@@ -2,7 +2,7 @@
 import SearchIcon from "./Icon/SearchIcon.astro";
 ---
 
-<form role="search" class="relative left-4">
+<form role="search" class="relative left-4 group">
   <input
     type="search"
     placeholder="Buscar..."
@@ -10,7 +10,7 @@ import SearchIcon from "./Icon/SearchIcon.astro";
     id="search-input"
   />
   <span
-    class="absolute inset-y-0 right-2 flex items-center pointer-events-none"
+    class="absolute inset-y-0 right-2 flex items-center pointer-events-none group-focus-within:hidden transition-all duration-200 ease-in-out"
   >
     <SearchIcon className="h-6 text-shadow-gray-100" />
   </span>

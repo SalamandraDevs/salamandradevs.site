@@ -3,7 +3,6 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import "@fontsource-variable/onest";
 
-/* define los tipos */
 export interface Props {
   titulo: string;
   descripcion?: string;
@@ -25,7 +24,9 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{titulo}</title>
   </head>
-  <body class="relative h-full w-full bg-sal-950 text-black dark:text-white">
+  <body
+    class="relative h-full w-full bg-sal-300 text-black dark:bg-sal-950 dark:text-white transition-colors duration-200"
+  >
     <div
       class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-[-1]"
     >

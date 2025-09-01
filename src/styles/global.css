@@ -51,3 +51,5 @@
   --color-warning-900: #6e4915;
   --color-warning-950: #402608;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
