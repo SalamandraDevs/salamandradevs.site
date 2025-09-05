@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import "@fontsource-variable/onest";
 import ModalSearch from "../components/ModalSearch.astro";
+import Hero from "../components/Hero.astro";
 
 export interface Props {
   titulo: string;
@@ -33,30 +34,34 @@ const {
     >
     </div>
     <Header />
-    <main>
+    <main class="relative w-full">
+      <Hero />
       <slot />
       <ModalSearch />
     </main>
   </body>
-</html>
 
-<style>
-  * {
-    box-sizing: border-box;
-    min-width: 0;
-  }
-  html,
-  body {
-    font-family: "Onest Variable", sans-serif;
-    min-height: 100dvh;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    text-wrap: balance;
-  }
-  p {
-    text-wrap: pretty;
-  }
-</style>
+  <style>
+    * {
+      box-sizing: border-box;
+      min-width: 0;
+    }
+    html,
+    body {
+      font-family: "Onest Variable", sans-serif;
+      min-height: 100dvh;
+    }
+    main {
+      min-height: 100dvh;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-wrap: balance;
+    }
+    p {
+      text-wrap: pretty;
+    }
+  </style>
+</html>
