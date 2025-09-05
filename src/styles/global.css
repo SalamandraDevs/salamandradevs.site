@@ -53,3 +53,4 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
