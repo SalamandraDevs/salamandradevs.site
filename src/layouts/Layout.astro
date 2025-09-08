@@ -34,7 +34,7 @@ const {
     >
     </div>
     <Header />
-    <main class="relative w-full">
+    <main class="relative w-full flex items-center">
       <Hero />
       <slot />
       <ModalSearch />
@@ -49,9 +49,6 @@ const {
     html,
     body {
       font-family: "Onest Variable", sans-serif;
-      min-height: 100dvh;
-    }
-    main {
       min-height: 100dvh;
     }
     h1,
