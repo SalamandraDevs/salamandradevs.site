@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import "@fontsource-variable/onest";
-import ModalSearch from "../components/ModalSearch.astro";
 import Hero from "../components/Hero.astro";
 
 export interface Props {
@@ -37,7 +36,6 @@ const {
     <main class="relative w-full flex items-center">
       <Hero />
       <slot />
-      <ModalSearch />
     </main>
   </body>
 

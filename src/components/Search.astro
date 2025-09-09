@@ -1,23 +1,8 @@
 ---
 import SearchIcon from "./Icon/SearchIcon.astro";
-import { Button } from "@heroui/react";
 ---
 
-<Button
-  className="search border bg-transparent rounded-lg cursor-pointer w-30 dark:text-white/80 font-bold"
-  client:visible
->
-  <SearchIcon
-    class="text-zinc-950 dark:text-white/80 w-6 h-auto transition-colors duration-200"
-  />
-  Buscar</Button
->
-
-<style>
-  .search {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 10px;
-    transition: all 0.3s ease-in-out;
-  }
-</style>
+<div id="searchBox" class="flex">
+  <SearchIcon class="w-6 h-auto" />
+  <input type="text" placeholder="Buscar..." class="hidden" />
+</div>
