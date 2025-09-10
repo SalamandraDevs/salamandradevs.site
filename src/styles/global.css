@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+
+  --color-sal-50: #f4f7fb;
+  --color-sal-100: #e8eff6;
+  --color-sal-200: #ccdeeb;
+  --color-sal-300: #9ec1db;
+  --color-sal-400: #6aa1c6;
+  --color-sal-500: #4785b0;
+  --color-sal-600: #366b93;
+  --color-sal-700: #2c5678;
+  --color-sal-800: #284964;
+  --color-sal-900: #21374a;
+  --color-sal-950: #192938;
+
+  --color-secondary-50: #eefffd;
+  --color-secondary-100: #c5fffa;
+  --color-secondary-200: #8bfff7;
+  --color-secondary-300: #4afef3;
+  --color-secondary-400: #15ece5;
+  --color-secondary-500: #00d0cc;
+  --color-secondary-600: #00a8a7;
+  --color-secondary-700: #008a8c;
+  --color-secondary-800: #066669;
+  --color-secondary-900: #0a5657;
+  --color-secondary-950: #003135;
+
+  --color-accent-50: #effaf5;
+  --color-accent-100: #d8f3e6;
+  --color-accent-200: #b4e6d0;
+  --color-accent-300: #82d3b5;
+  --color-accent-400: #4fb895;
+  --color-accent-500: #33b48d;
+  --color-accent-600: #1d7e63;
+  --color-accent-700: #176551;
+  --color-accent-800: #155041;
+  --color-accent-900: #124236;
+  --color-accent-950: #09251f;
+
+  --color-warning-50: #fdfde9;
+  --color-warning-100: #fbfcc5;
+  --color-warning-200: #f9f871;
+  --color-warning-300: #f7ef4d;
+  --color-warning-400: #f3e01c;
+  --color-warning-500: #e3c70f;
+  --color-warning-600: #c49d0a;
+  --color-warning-700: #9c710c;
+  --color-warning-800: #815a12;
+  --color-warning-900: #6e4915;
+  --color-warning-950: #402608;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';

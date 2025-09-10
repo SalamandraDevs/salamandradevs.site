@@ -1,0 +1,55 @@
+---
+import ButtonGithub from "./ButtonGithub.astro";
+import Search from "./Search.astro";
+import ButtonDarkMode from "./ButtonDarkMode.astro";
+import CodeIcon from "./Icon/CodeIcon.astro";
+
+const navItems = [
+  { title: "Inicio", label: "Home", href: "/" },
+  { title: "Comunidad", label: "Community", href: "/comunidad" },
+  { title: "Blog", label: "Blog", href: "/blog" },
+  { title: "Recursos", label: "Resources", href: "/recursos" },
+  { title: "Contacto", label: "Contact", href: "/contacto" },
+];
+---
+
+<header class="bg-sal-800/80" role="banner">
+  <div class="flex justify-between items-center p-4 h-16">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="icon.png" alt="Logo salamandra" class="h-10 w-auto" />
+      <h2 class="text-2xl transition-colors duration-200">Salamandra Devs</h2>
+      <CodeIcon
+        class="w-7 h-auto relative top-1 fill-current text-zinc-950 dark:text-white transition-colors duration-200"
+      />
+    </a>
+
+    <!-- Navbar -->
+    <nav>
+      <ul class="flex space-x-5">
+        {
+          navItems.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class=" hover:text-secondary-200 transition-all duration-200 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-sal-500 after:transition-all after:duration-300
+                hover:after:w-full focus:after:w-full"
+                aria-label={`Ir a página de inicio de ${item.title}`}
+              >
+                {item.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <nav class="flex justify-end" aria-label="Acciones rápidas">
+      <ul class="flex gap-3 items-center">
+        <li><Search /></li>
+        <li><ButtonDarkMode /></li>
+        <li><ButtonGithub /></li>
+      </ul>
+    </nav>
+  </div>
+</header>

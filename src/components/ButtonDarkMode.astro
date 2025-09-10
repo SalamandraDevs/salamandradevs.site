@@ -1,0 +1,63 @@
+---
+import Sun from "./Icon/Sun.astro";
+import Moon from "./Icon/Moon.astro";
+
+const THEMES = ["Light", "Dark"];
+---
+
+<div class="relative ml-1 mr-1">
+  <button
+    transition:persist
+    id="theme-toggle-btn"
+    class="appearance-none border-none flex hover:scale-125 transition"
+  >
+    <span class="sr-only">Elige el tema</span>
+    <Sun
+      id="light"
+      class="theme-toggle-icon size-6 text-yellow-400 transition-colors duration-200 hidden"
+    />
+    <Moon
+      id="dark"
+      class="theme-toggle-icon size-6 dark:text-gray-950 fill-current transition-colors duration-200"
+    />
+  </button>
+</div>
+
+<script is:inline>
+  const btn = document.getElementById("theme-toggle-btn");
+  const sunIcon = document.getElementById("light");
+  const moonIcon = document.getElementById("dark");
+  const html = document.documentElement;
+
+  // Validate the user's preference
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      html.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      sunIcon.classList.remove("hidden");
+      moonIcon.classList.add("hidden");
+    } else {
+      html.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      sunIcon.classList.add("hidden");
+      moonIcon.classList.remove("hidden");
+    }
+  }
+
+  // Save the user's preference in localStorage
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  } else {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    applyTheme(prefersDark ? "dark" : "light");
+  }
+
+  btn.addEventListener("click", () => {
+    const isDark = html.classList.contains("dark");
+    applyTheme(isDark ? "light" : "dark");
+  });
+</script>

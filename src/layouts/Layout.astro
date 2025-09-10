@@ -1,61 +1,62 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import "@fontsource-variable/onest";
+import Hero from "../components/Hero.astro";
 
-/* define los tipos */
 export interface Props {
-	titulo: string;
-	descripcion?: string
+  titulo: string;
+  descripcion?: string;
 }
 
 const {
-	titulo,
-	descripcion = "Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain."
+  titulo,
+  descripcion = "Somos una comunidad inclusiva y colaborativa donde nos unimos para compartir conocimiento, resolvemos dudas, colaboramos en proyectos y sobre todo... !crecemos juntos!",
 } = Astro.props;
----  
+---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="icon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{titulo}</title>
-		
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={descripcion} />
+    <link rel="icon" type="image/svg+xml" href="icon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{titulo}</title>
+  </head>
+  <body
+    class="relative h-full w-full bg-sal-300 text-black dark:bg-sal-950 dark:text-white transition-colors duration-200"
+  >
+    <div
+      class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-[-1]"
+    >
+    </div>
+    <Header />
+    <main class="relative w-full flex items-center">
+      <Hero />
+      <slot />
+    </main>
+  </body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      min-width: 0;
+    }
+    html,
+    body {
+      font-family: "Onest Variable", sans-serif;
+      min-height: 100dvh;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-wrap: balance;
+    }
+    p {
+      text-wrap: pretty;
+    }
+  </style>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		color: #fff;
-		background: linear-gradient(-45deg, #0f172a, #0e7490, #0f172a, #1e3a8a);
-		background-size: 400% 400%;
-		animation: cambioFondo 15s ease-in-out infinite;
-	}
-
-	@keyframes cambioFondo {
-		0% {
-			background-position: 0% 50%;
-		}
-		25% {
-			background-position: 50% 50%;
-		}
-		50% {
-			background-position: 100% 50%;
-		}
-		75% {
-			background-position: 50% 50%;
-		}
-		100% {
-			background-position: 0% 50%;
-		}
-	}
-
-</style>

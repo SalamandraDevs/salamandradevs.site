@@ -1,0 +1,45 @@
+---
+import Discord from "./Icon/Discord.astro";
+import Telegram from "./Icon/Telegram.astro";
+---
+
+<section
+  id="hero"
+  class="hero grid grid-cols-1 md:grid-cols-2 gap-x-10 items-center justify-center text-center md:text-left w-full mx-auto px-18
+  py-28"
+  aria-title="Hero"
+>
+  <div class="div-1 space-y-6">
+    <h1 class="text-5xl font-bold">Salamandra Devs</h1>
+    <p>
+      Somos una comunidad inclusiva y colaborativa donde nos unimos para
+      compartir conocimiento, resolvemos dudas, colaboramos en proyectos y sobre
+      todo... ¡crecemos juntos!
+    </p>
+    <nav
+      class="flex gap-x-6 sm:flex-row sm:gap-x-6"
+      aria-label="Redes sociales"
+    >
+      <a
+        class="border rounded-lg p-2 px-6 border-sal-600 hover:text-sky-500 transition duration-300 flex items-center gap-x-2"
+        href="https://discord.gg/2t56qvky"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Ingresa al Discord
+        <Discord class="w-8 fill-current" />
+      </a>
+
+      <a
+        class="bg-sky-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-sky-600 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out flex items-center gap-x-2"
+        href="https://t.me/salamandradevs/1"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Siguenos en Telegram
+        <Telegram class="w-8 fill-current" />
+      </a>
+    </nav>
+  </div>
+  <div class="flex justify-center md:justify-end">
+    <img src="public/sala.png" alt="Salamandra" class="w-40 md:w-96" />
+  </div>
+</section>
